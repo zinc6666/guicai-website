@@ -1,0 +1,220 @@
+{
+  "common": {
+    "companyName": "龟彩"
+  },
+  "metadata": {
+    "title": "龟彩化工 | 优质染料与颜料",
+    "description": "领先的高品质工业染料和颜料供应商，服务于纺织、塑料和涂料行业。"
+  },
+  "nav": {
+    "products": "核心产品",
+    "solutions": "应用领域",
+    "sustainability": "关于我们",
+    "about": "企业文化",
+    "contact": "联系我们"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们期待与您的合作，共同探索色彩的无限可能。",
+    "info": {
+      "address": {
+        "title": "公司地址",
+        "value": "郑州市金水区"
+      },
+      "phone": {
+        "title": "联系电话",
+        "value": "138-xxxx-xxxx"
+      },
+      "email": {
+        "title": "电子邮箱",
+        "value": "contact@guicai.com"
+      },
+      "taobao": {
+        "title": "淘宝店铺",
+        "value": "龟彩科技官方店",
+        "link": "https://shop.taobao.com/"
+      }
+    },
+    "form": {
+      "name": "姓名",
+      "email": "邮箱",
+      "message": "留言内容",
+      "submit": "发送留言"
+    }
+  },
+  "menu": {
+    "products": {
+      "desktop": {
+        "title": "智能桌面调色机",
+        "desc": "高精度色彩匹配，专为实验室与小型生产设计"
+      },
+      "industrial": {
+        "title": "工业级调色系统",
+        "desc": "大规模生产的高效色彩解决方案"
+      },
+      "accessories": {
+        "title": "耗材与配件",
+        "desc": "原装高品质色浆与维护配件"
+      }
+    },
+    "solutions": {
+      "paint": {
+        "title": "涂料行业",
+        "desc": "建筑涂料、工业漆的精准调色"
+      },
+      "ink": {
+        "title": "油墨行业",
+        "desc": "包装印刷与特种油墨配色"
+      },
+      "beauty": {
+        "title": "美妆行业",
+        "desc": "粉底、口红等彩妆个性化定制"
+      },
+      "art": {
+        "title": "艺术创作",
+        "desc": "颜料与画材的灵感调配"
+      }
+    },
+    "about": {
+      "intro": {
+        "title": "公司简介",
+        "desc": "了解龟彩的发展历程与实力"
+      },
+      "team": {
+        "title": "研发团队",
+        "desc": "由行业专家组成的核心技术团队"
+      },
+      "patents": {
+        "title": "专利技术",
+        "desc": "自主研发的核心知识产权"
+      }
+    },
+    "culture": {
+      "mission": {
+        "title": "企业使命",
+        "desc": "赋予色彩新的生命力",
+        "detail": "我们致力于通过创新的调色技术，让每一份色彩都能精准表达情感与创意。不仅是提供设备，更是为全球色彩行业提供源源不断的生命力，让世界因色彩而更加生动。"
+      },
+      "vision": {
+        "title": "企业愿景",
+        "desc": "成为全球领先的智能调色专家",
+        "detail": "立足中国，放眼全球。我们目标是构建一个覆盖全行业的智能调色生态系统，通过持续的技术革新，定义未来色彩管理的标准，成为客户最信赖的色彩合作伙伴。"
+      },
+      "values": {
+        "title": "核心价值观",
+        "desc": "创新、精准、服务、共赢",
+        "detail": "创新是发展的动力，精准是产品的灵魂，服务是品牌的基石，共赢是合作的初衷。我们始终坚持以客户为中心，在追求极致的道路上永不止步。"
+      }
+    }
+  },
+  "culture_page": {
+    "story": {
+      "title": "我们的故事",
+      "p1": "一家专注于智能桌面调色设备研发的创新型科技企业。核心聚焦桌面调色机的技术研发与全球技术服务落地，为色彩领域、液体精配领域各行业提供专业的智能设备解决方案。",
+      "p2": "在龟彩，我们相信色彩不仅是视觉的体验，更是情感的传递。每一滴颜料的调配，都承载着对完美的追求和对创新的执着。"
+    }
+  },
+  "hero": {
+    "title": "郑州龟彩科技实业",
+    "spectrum": "有限公司",
+    "subtitle": "艺术不应止于调色，龟彩为您赋予新的生命力。",
+    "description": "成立于2026年1月6日，总部坐落于郑州市金水区。我们是一家专注于智能桌面调色设备研发的创新型科技企业，核心聚焦桌面调色机的技术研发与全球技术服务落地。",
+    "explore": "了解产品",
+    "request": "咨询合作"
+  },
+  "trends": {
+    "title": "广泛应用领域",
+    "description": "为色彩领域、液体精配领域各行业提供专业的智能设备解决方案。"
+  },
+  "features": {
+    "eco": {
+      "title": "专业研发团队",
+      "description": "公司组建了专业的研发团队，6名核心研发人员深耕智能调色技术领域，致力于技术创新。"
+    },
+    "quality": {
+      "title": "自主核心技术",
+      "description": "凭借自主研发专利形成核心技术壁垒，打造出适配多行业场景的桌面调色机产品。"
+    },
+    "custom": {
+      "title": "全场景适用",
+      "description": "兼具操作便捷性、调色精准性与场景适配性，满足涂料、油墨、美妆、艺术创作等多领域需求。"
+    }
+  },
+  "home": {
+    "brand_power": {
+      "title": "凝聚色彩力量",
+      "desc": "汇聚全球顶尖色彩专家，只为呈现最精准的每一抹色彩"
+    },
+    "collision": {
+      "title_1": "COLOR",
+      "title_2": "COLLISION",
+      "desc": "探索色彩在不同维度下的无限可能，每一次碰撞都是创新的火花。",
+      "view_all": "查看所有方案"
+    },
+    "applications": {
+      "industrial": {
+        "title_1": "INDUSTRIAL",
+        "title_2": "COATING",
+        "desc": "工业涂料 · 极致防护"
+      },
+      "beauty": {
+        "title": "BEAUTY & COSMETICS",
+        "desc": "美妆 · 潮流风向"
+      },
+      "art": {
+        "title": "ART",
+        "subtitle": "ART & DESIGN"
+      },
+      "textile": {
+        "title": "TEXTILE",
+        "desc": "纺织印染 · 色彩之源"
+      },
+      "future": {
+        "title": "FUTURE",
+        "tag": "TECH"
+      }
+    }
+  },
+  "footer": {
+    "description": "一家专注于智能桌面调色设备研发的创新型科技企业。核心聚焦桌面调色机的技术研发与全球技术服务落地，为色彩领域、液体精配领域各行业提供专业的智能设备解决方案。",
+    "products": {
+      "title": "应用领域",
+      "textile": "涂料调色",
+      "coatings": "油墨配色",
+      "plastic": "美妆定制",
+      "inks": "艺术创作"
+    },
+    "company": {
+      "title": "关于龟彩",
+      "about": "公司简介",
+      "careers": "研发团队",
+      "sustainability": "专利技术",
+      "contact": "联系我们"
+    },
+    "rights": "郑州龟彩科技实业有限公司。保留所有权利。",
+    "service_support": "服务与支持",
+    "after_sales": "售后服务",
+    "contact": "联系我们",
+    "video_tutorials": "教学视频",
+    "exhibitions": "展会",
+    "news_center": "新闻中心",
+    "company_news": "公司新闻",
+    "industry_news": "行业动态",
+    "follow_us": "关注我们",
+    "hotline": "全国服务热线",
+    "marketing_email": "市场合作邮箱",
+    "sales_email": "销售合作邮箱",
+    "service_email": "售后服务邮箱",
+    "wechat_mp": "龟彩官方公众号",
+    "get_updates": "[获取最新品牌资讯]",
+    "app_name": "龟彩 APP",
+    "app_desc": "[智能设备互联]",
+    "brand_story": "品牌故事",
+    "brand_strength": "品牌实力",
+    "cooperation": "异业合作",
+    "license": "企业营业执照",
+    "address_label": "联系地址",
+    "address_value": "河南省郑州市金水区兴达路街道惠科路33号西亚斯科教产业园10号楼4层",
+    "phone_label": "联系电话"
+  }
+}

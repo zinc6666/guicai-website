@@ -1,0 +1,220 @@
+{
+  "common": {
+    "companyName": "Guicai"
+  },
+  "metadata": {
+    "title": "Zhengzhou Guicai | Intelligent Desktop Color Mixing Expert",
+    "description": "Specialized in R&D of intelligent desktop color mixing equipment, with independent patents and professional R&D team."
+  },
+  "nav": {
+    "products": "Products",
+    "solutions": "Applications",
+    "sustainability": "About Us",
+    "about": "Culture",
+    "contact": "Contact"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We look forward to cooperating with you to explore the infinite possibilities of color.",
+    "info": {
+      "address": {
+        "title": "Address",
+        "value": "Jinshui District, Zhengzhou"
+      },
+      "phone": {
+        "title": "Phone",
+        "value": "138-xxxx-xxxx"
+      },
+      "email": {
+        "title": "Email",
+        "value": "contact@guicai.com"
+      },
+      "taobao": {
+        "title": "Taobao Shop",
+        "value": "Guicai Official Store",
+        "link": "https://shop.taobao.com/"
+      }
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  },
+  "menu": {
+    "products": {
+      "desktop": {
+        "title": "Smart Desktop Mixer",
+        "desc": "High precision color matching for lab and small scale production"
+      },
+      "industrial": {
+        "title": "Industrial Mixing System",
+        "desc": "Efficient color solutions for mass production"
+      },
+      "accessories": {
+        "title": "Consumables & Accessories",
+        "desc": "Original high-quality colorants and maintenance parts"
+      }
+    },
+    "solutions": {
+      "paint": {
+        "title": "Paint Industry",
+        "desc": "Precision mixing for architectural and industrial paints"
+      },
+      "ink": {
+        "title": "Ink Industry",
+        "desc": "Color matching for packaging printing and specialty inks"
+      },
+      "beauty": {
+        "title": "Beauty Industry",
+        "desc": "Personalized customization for foundation, lipstick, etc."
+      },
+      "art": {
+        "title": "Art Creation",
+        "desc": "Inspiration mixing for pigments and art materials"
+      }
+    },
+    "about": {
+      "intro": {
+        "title": "Introduction",
+        "desc": "Learn about Guicai's history and strength"
+      },
+      "team": {
+        "title": "R&D Team",
+        "desc": "Core technical team composed of industry experts"
+      },
+      "patents": {
+        "title": "Patents",
+        "desc": "Independent core intellectual property rights"
+      }
+    },
+    "culture": {
+      "mission": {
+        "title": "Mission",
+        "desc": "Empower colors with new vitality",
+        "detail": "We are committed to innovative color mixing technology, allowing every color to precisely express emotion and creativity. Not just providing equipment, but providing a continuous source of vitality for the global color industry, making the world more vivid with color."
+      },
+      "vision": {
+        "title": "Vision",
+        "desc": "Become a global leader in intelligent color mixing",
+        "detail": "Based in China, looking at the world. Our goal is to build an intelligent color mixing ecosystem covering the entire industry, defining the standard of future color management through continuous technological innovation, and becoming the most trusted color partner for customers."
+      },
+      "values": {
+        "title": "Values",
+        "desc": "Innovation, Precision, Service, Win-Win",
+        "detail": "Innovation is the driving force of development, precision is the soul of the product, service is the cornerstone of the brand, and win-win is the original intention of cooperation. We always insist on customer-centricity and never stop on the road to pursuing perfection."
+      }
+    }
+  },
+  "culture_page": {
+    "story": {
+      "title": "Our Story",
+      "p1": "An innovative technology enterprise specializing in R&D of intelligent desktop color mixing equipment. Focusing on desktop color mixer technology and global technical services, providing professional solutions for color and liquid precision dispensing industries.",
+      "p2": "At Guicai, we believe that color is not only a visual experience but also an emotional transmission. Every drop of pigment mixing carries the pursuit of perfection and dedication to innovation."
+    }
+  },
+  "hero": {
+    "title": "Zhengzhou Guicai Technology",
+    "spectrum": "Industry Co., Ltd.",
+    "subtitle": "Art should not stop at color mixing, Guicai empowers you with new vitality.",
+    "description": "Founded on January 6, 2026, headquartered in Jinshui District, Zhengzhou. We are an innovative technology enterprise specializing in the R&D of intelligent desktop color mixing equipment, focusing on desktop color mixer technology and global technical services.",
+    "explore": "Our Products",
+    "request": "Cooperation"
+  },
+  "trends": {
+    "title": "Wide Application Areas",
+    "description": "Providing professional intelligent equipment solutions for color and liquid precision dispensing industries."
+  },
+  "features": {
+    "eco": {
+      "title": "Professional R&D Team",
+      "description": "We have assembled a professional R&D team with 6 core researchers deeply cultivated in the field of intelligent color mixing technology."
+    },
+    "quality": {
+      "title": "Independent Core Tech",
+      "description": "With independent patents forming core technical barriers, we create desktop color mixer products suitable for multi-industry scenarios."
+    },
+    "custom": {
+      "title": "All-Scenario Application",
+      "description": "Combining operational convenience, color mixing precision, and scenario adaptability to meet needs in coatings, inks, beauty, and art creation."
+    }
+  },
+  "home": {
+    "brand_power": {
+      "title": "Gathering Color Power",
+      "desc": "Bringing together top global color experts to present the most precise shade of every color."
+    },
+    "collision": {
+      "title_1": "COLOR",
+      "title_2": "COLLISION",
+      "desc": "Exploring the infinite possibilities of color across different dimensions, where every collision sparks innovation.",
+      "view_all": "View All Solutions"
+    },
+    "applications": {
+      "industrial": {
+        "title_1": "INDUSTRIAL",
+        "title_2": "COATING",
+        "desc": "Industrial Coating · Ultimate Protection"
+      },
+      "beauty": {
+        "title": "BEAUTY & COSMETICS",
+        "desc": "Beauty · Trend Direction"
+      },
+      "art": {
+        "title": "ART",
+        "subtitle": "ART & DESIGN"
+      },
+      "textile": {
+        "title": "TEXTILE",
+        "desc": "Textile Printing · Source of Color"
+      },
+      "future": {
+        "title": "FUTURE",
+        "tag": "TECH"
+      }
+    }
+  },
+  "footer": {
+    "description": "An innovative technology enterprise specializing in R&D of intelligent desktop color mixing equipment. Focusing on desktop color mixer technology and global technical services, providing professional solutions for color and liquid precision dispensing industries.",
+    "products": {
+      "title": "Applications",
+      "textile": "Coatings Mixing",
+      "coatings": "Ink Color Matching",
+      "plastic": "Beauty Customization",
+      "inks": "Art Creation"
+    },
+    "company": {
+      "title": "About Guicai",
+      "about": "Introduction",
+      "careers": "R&D Team",
+      "sustainability": "Patents",
+      "contact": "Contact Us"
+    },
+    "rights": "Zhengzhou Guicai Technology Industry Co., Ltd. All rights reserved.",
+    "service_support": "Service & Support",
+    "after_sales": "After-sales",
+    "contact": "Contact Us",
+    "video_tutorials": "Tutorials",
+    "exhibitions": "Exhibitions",
+    "news_center": "News Center",
+    "company_news": "Company News",
+    "industry_news": "Industry News",
+    "follow_us": "Follow Us",
+    "hotline": "Hotline",
+    "marketing_email": "Marketing",
+    "sales_email": "Sales",
+    "service_email": "Service",
+    "wechat_mp": "Official WeChat",
+    "get_updates": "[Get Latest Updates]",
+    "app_name": "Guicai APP",
+    "app_desc": "[Smart Device Connect]",
+    "brand_story": "Brand Story",
+    "brand_strength": "Brand Strength",
+    "cooperation": "Cooperation",
+    "license": "Business License",
+    "address_label": "Address",
+    "address_value": "4th Floor, Building 10, Sias Science and Technology Industrial Park, No. 33 Huike Road, Xingda Road Street, Jinshui District, Zhengzhou, Henan",
+    "phone_label": "Phone"
+  }
+}
