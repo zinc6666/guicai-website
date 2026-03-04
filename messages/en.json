@@ -19,7 +19,7 @@
     "info": {
       "address": {
         "title": "Address",
-        "value": "Jinshui District, Zhengzhou"
+        "value": "4th Floor,Building 10,Sias Education and Science Park,No.33,Huike    Road,Jinshui District,Zhengzhou City,Henan Province, China"
       },
       "phone": {
         "title": "Phone",
@@ -27,7 +27,7 @@
       },
       "email": {
         "title": "Email",
-        "value": "contact@guicai.com"
+        "value": "guicai@zzgckjsyyxgs.wecom.work"
       },
       "taobao": {
         "title": "Taobao Shop",
@@ -120,7 +120,7 @@
   "hero": {
     "title": "Zhengzhou Guicai Technology",
     "spectrum": "Industry Co., Ltd.",
-    "subtitle": "Art should not stop at color mixing, Guicai empowers you with new vitality.",
+    "subtitle": "Art Unbounded by Color Mixing, Empowering New Vitality",
     "description": "Founded on January 6, 2026, headquartered in Jinshui District, Zhengzhou. We are an innovative technology enterprise specializing in the R&D of intelligent desktop color mixing equipment, focusing on desktop color mixer technology and global technical services.",
     "explore": "Our Products",
     "request": "Cooperation"
@@ -165,7 +165,7 @@
         "desc": "Beauty · Trend Direction"
       },
       "art": {
-        "title": "ART",
+        "title": "ART  & DESIGN",
         "subtitle": "ART & DESIGN"
       },
       "textile": {
@@ -179,7 +179,7 @@
     }
   },
   "footer": {
-    "description": "An innovative technology enterprise specializing in R&D of intelligent desktop color mixing equipment. Focusing on desktop color mixer technology and global technical services, providing professional solutions for color and liquid precision dispensing industries.",
+    "description": "An innovative technology enterprise dedicated to the research and development of intelligent desktop color-matching devices. The core focus is on the technological research and development of desktop color matching machines and the implementation of global technical services, providing professional intelligent equipment solutions for various industries in the color field and liquid blending field.",
     "products": {
       "title": "Applications",
       "textile": "Coatings Mixing",
@@ -209,15 +209,94 @@
     "sales_email": "Sales",
     "service_email": "Service",
     "wechat_mp": "Official WeChat",
-    "get_updates": "[Get Latest Updates]",
+    "get_updates": "Get Latest Updates",
     "app_name": "Guicai APP",
-    "app_desc": "[Smart Device Connect]",
+    "app_desc": "One-click Color Mgmt",
     "brand_story": "Brand Story",
     "brand_strength": "Brand Strength",
     "cooperation": "Cooperation",
     "license": "Business License",
     "address_label": "Address",
     "address_value": "4th Floor, Building 10, Sias Science and Technology Industrial Park, No. 33 Huike Road, Xingda Road Street, Jinshui District, Zhengzhou, Henan",
-    "phone_label": "Phone"
+    "phone_label": "Phone",
+    "qr_placeholder": "QR Code"
+  },
+  "products_page": {
+    "view_details": "View Details",
+    "collapse_details": "Collapse Details",
+    "tech_specs": "Tech Specs",
+    "core_advantages": "Core Advantages",
+    "min_volume": "Min Volume",
+    "precision": "Precision",
+    "capacity": "Capacity",
+    "scenarios": "Scenarios",
+    "fast_response": "#FastResponse",
+    "zero_waste": "#ZeroWaste",
+    "silent_run": "#SilentRun",
+    "redefine_workflow": "Redefine Desktop Workflow",
+    "redefine_desc": "From inspiration to reality in one click. Free designers and colorists from tedious manual mixing to focus on color creation itself.",
+    "production_boost": "Production Boost",
+    "pass_rate": "Pass Rate",
+    "maintenance_cost": "Maintenance Cost",
+    "industry_4_0": "Industry 4.0 Ready",
+    "industry_desc": "Full MES/ERP integration, real-time data upload, full process traceability. Remote diagnosis and OTA upgrade ensure the production line is always in optimal condition.",
+    "consumables": "Original Consumables",
+    "pigments": "Nano Eco-Pigments",
+    "cleaner": "Special Cleaner",
+    "service_pack": "Worry-free Service",
+    "quarterly_check": "Quarterly On-site Calibration",
+    "parts_replacement": "Free Parts Replacement",
+    "support_24h": "24h Expert Support",
+    "emergency_response": "4h Emergency Response",
+    "desktop_details": [
+      "High Precision Algorithm",
+      "Lab-grade Micro Mixing",
+      "Smart Cloud Formula Mgmt",
+      "Compact Desktop Design"
+    ],
+    "industrial_details": [
+      "Mass Automated Production",
+      "Real-time Quality Monitoring",
+      "Multi-station Collaboration",
+      "Industrial Durability"
+    ],
+    "accessories_details": [
+      "High Purity Colorants",
+      "Precision Pump & Tubing",
+      "Regular Maintenance Kit",
+      "Calibration Tools"
+    ]
+  },
+  "solutions_page": {
+    "view_solution": "View Solution",
+    "collapse_solution": "Collapse Solution",
+    "paint": {
+      "desc": "Precision mixing for architectural and industrial paints",
+      "detail": "Targeting the high viscosity of architectural and industrial anti-corrosion paints, we developed specialized high-torque precision pump heads. Combined with adaptive flow control algorithms, we ensure microgram-level precision even for high-viscosity paints. The system includes major color chart databases, supporting on-site color matching and cloud calibration.",
+      "highlight1": "High Viscosity Adaptability",
+      "highlight2": "Weather Resistance Support",
+      "highlight3": "Portable On-site Matching"
+    },
+    "ink": {
+      "desc": "Color matching for packaging printing and specialty inks",
+      "detail": "Facing strict requirements for spot color consistency in packaging printing, our intelligent ink system precisely controls the ratio of each base ink, significantly reducing waste. Supports UV inks, water-based inks, and more. Built-in spectrometer detects printed color in real-time and automatically corrects the formula.",
+      "highlight1": "Precise Spot Color",
+      "highlight2": "Waste Reduction",
+      "highlight3": "Online Calibration"
+    },
+    "beauty": {
+      "desc": "Personalized customization for foundation, lipstick, etc.",
+      "detail": "A micro color mixing station for new retail scenarios. Consumers simply scan their skin tone or choose a desired shade, and the device mixes a custom foundation or lipstick on-site within 3 minutes. Fully enclosed sterile filling meets cosmetic hygiene standards, delivering a new immersive consumer experience.",
+      "highlight1": "Personalized Customization",
+      "highlight2": "Sterile Filling Process",
+      "highlight3": "3-Min Fast Delivery"
+    },
+    "art": {
+      "desc": "Inspiration mixing for pigments and art materials",
+      "detail": "Empowering artists and restorers to reproduce lost ancient pigments or create new artistic colors. Our system records the detailed formula of every mix, establishing a personal color archive for artists. Supports precise mixing of oil paints, acrylics, watercolors, and more.",
+      "highlight1": "Infinite Color Gamut",
+      "highlight2": "Historical Color Restoration",
+      "highlight3": "Personal Color Archive"
+    }
   }
 }

@@ -63,10 +63,10 @@ export default function Home() {
               <h2 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">
                 COLOR<br/>COLLISION
               </h2>
-              <p className="text-xl text-gray-400 max-w-md">探索色彩在不同维度下的无限可能，每一次碰撞都是创新的火花。</p>
+              <p className="text-xl text-gray-400 max-w-md">{t('home.collision.desc')}</p>
             </div>
             <Link href="/solutions" className="hidden md:flex items-center gap-2 text-lg font-bold hover:text-blue-400 transition-colors group">
-              查看所有方案 <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+              {t('home.collision.view_all')} <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
             </Link>
           </div>
           
@@ -76,8 +76,8 @@ export default function Home() {
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-60 group-hover:opacity-40 transition-opacity duration-500 scale-100 group-hover:scale-110"></div>
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80"></div>
               <div className="absolute bottom-0 left-0 p-8 transform transition-transform duration-500 group-hover:-translate-y-2">
-                <h3 className="text-4xl font-black mb-2 text-white">INDUSTRIAL<br/>COATING</h3>
-                <p className="text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">工业涂料 · 极致防护</p>
+                <h3 className="text-4xl font-black mb-2 text-white">{t('home.applications.industrial.title_1')}<br/>{t('home.applications.industrial.title_2')}</h3>
+                <p className="text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">{t('home.applications.industrial.desc')}</p>
                 <div className="w-12 h-1 bg-blue-500 mt-4 transition-all duration-500 w-0 group-hover:w-24"></div>
               </div>
             </div>
@@ -87,8 +87,8 @@ export default function Home() {
               <div className="absolute inset-0 bg-[url('/meizhuang.jpg')] bg-cover bg-center opacity-60 group-hover:opacity-40 transition-opacity duration-500 scale-100 group-hover:scale-110"></div>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-900/80 to-transparent transition-all duration-500 group-hover:from-purple-900/90"></div>
               <div className="absolute bottom-0 left-0 p-8 transform transition-transform duration-500 group-hover:-translate-y-2">
-                <h3 className="text-3xl font-black mb-1 text-white">BEAUTY & COSMETICS</h3>
-                <p className="text-sm font-bold text-purple-300 opacity-80 group-hover:opacity-100 transition-opacity">美妆 · 潮流风向</p>
+                <h3 className="text-3xl font-black mb-1 text-white">{t('home.applications.beauty.title')}</h3>
+                <p className="text-sm font-bold text-purple-300 opacity-80 group-hover:opacity-100 transition-opacity">{t('home.applications.beauty.desc')}</p>
               </div>
             </div>
 
@@ -97,10 +97,10 @@ export default function Home() {
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-60 group-hover:opacity-40 transition-opacity duration-500 scale-100 group-hover:scale-110"></div>
               <div className="absolute inset-0 bg-gradient-to-tr from-yellow-900/50 to-yellow-500/50 mix-blend-overlay"></div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <h3 className="text-4xl font-black text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-50 group-hover:scale-100">ART</h3>
+                <h3 className="text-4xl font-black text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-50 group-hover:scale-100">{t('home.applications.art.title')}</h3>
               </div>
               <div className="absolute bottom-6 left-6">
-                <h3 className="text-2xl font-bold text-white group-hover:opacity-0 transition-opacity">ART & DESIGN</h3>
+                <h3 className="text-2xl font-bold text-white group-hover:opacity-0 transition-opacity">{t('home.applications.art.subtitle')}</h3>
               </div>
             </div>
 
@@ -110,8 +110,8 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-pink-900/90 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 w-full flex justify-between items-end">
                 <div>
-                  <h3 className="text-3xl font-black mb-1 text-white">TEXTILE</h3>
-                  <p className="text-pink-200">纺织印染 · 色彩之源</p>
+                  <h3 className="text-3xl font-black mb-1 text-white">{t('home.applications.textile.title')}</h3>
+                  <p className="text-pink-200">{t('home.applications.textile.desc')}</p>
                 </div>
                 <ArrowRight className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all duration-300" />
               </div>
@@ -122,8 +122,8 @@ export default function Home() {
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-60 group-hover:opacity-40 transition-opacity duration-500 scale-100 group-hover:scale-110"></div>
               <div className="absolute inset-0 bg-teal-900/40 hover:bg-teal-900/20 transition-colors"></div>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full">
-                <h3 className="text-3xl font-black text-white mb-2">FUTURE</h3>
-                <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-xs font-bold text-white">TECH</span>
+                <h3 className="text-3xl font-black text-white mb-2">{t('home.applications.future.title')}</h3>
+                <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-xs font-bold text-white">{t('home.applications.future.tag')}</span>
               </div>
               <ArrowRight className="w-8 h-8 text-white flex-shrink-0 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all duration-300" />
             </div>
@@ -257,7 +257,7 @@ export default function Home() {
                   <div className="w-28 h-28 bg-white mb-3 p-2 flex items-center justify-center">
                     {/* Placeholder for QR Code */}
                     <div className="w-full h-full border-2 border-dashed border-gray-300 flex items-center justify-center text-gray-400 text-xs">
-                      二维码占位
+                      {t('footer.qr_placeholder')}
                     </div>
                   </div>
                   <p className="text-xs text-gray-500 max-w-[120px]">
@@ -269,7 +269,7 @@ export default function Home() {
                   <div className="w-28 h-28 bg-white mb-3 p-2 flex items-center justify-center">
                     {/* Placeholder for QR Code */}
                     <div className="w-full h-full border-2 border-dashed border-gray-300 flex items-center justify-center text-gray-400 text-xs">
-                      二维码占位
+                      {t('footer.qr_placeholder')}
                     </div>
                   </div>
                   <p className="text-xs text-gray-500 max-w-[120px]">

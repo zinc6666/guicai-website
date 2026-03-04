@@ -19,7 +19,7 @@
     "info": {
       "address": {
         "title": "公司地址",
-        "value": "郑州市金水区"
+        "value": "中国河南省郑州市金水区慧科路 33 号西亚斯科教产业园 10 号楼 4 层"
       },
       "phone": {
         "title": "联系电话",
@@ -27,11 +27,11 @@
       },
       "email": {
         "title": "电子邮箱",
-        "value": "contact@guicai.com"
+        "value": "guicai@zzgckjsyyxgs.wecom.work"
       },
       "taobao": {
         "title": "淘宝店铺",
-        "value": "龟彩科技官方店",
+        "value": "龟彩官方店",
         "link": "https://shop.taobao.com/"
       }
     },
@@ -120,7 +120,7 @@
   "hero": {
     "title": "郑州龟彩科技实业",
     "spectrum": "有限公司",
-    "subtitle": "艺术不应止于调色，龟彩为您赋予新的生命力。",
+    "subtitle": "艺术不囿于调色  龟彩赋其新生机",
     "description": "成立于2026年1月6日，总部坐落于郑州市金水区。我们是一家专注于智能桌面调色设备研发的创新型科技企业，核心聚焦桌面调色机的技术研发与全球技术服务落地。",
     "explore": "了解产品",
     "request": "咨询合作"
@@ -165,7 +165,7 @@
         "desc": "美妆 · 潮流风向"
       },
       "art": {
-        "title": "ART",
+        "title": "ART & DESIGN",
         "subtitle": "ART & DESIGN"
       },
       "textile": {
@@ -195,6 +195,9 @@
       "contact": "联系我们"
     },
     "rights": "郑州龟彩科技实业有限公司。保留所有权利。",
+    "brand_story": "品牌故事",
+    "brand_strength": "品牌实力",
+    "cooperation": "异业合作",
     "service_support": "服务与支持",
     "after_sales": "售后服务",
     "contact": "联系我们",
@@ -204,20 +207,96 @@
     "company_news": "公司新闻",
     "industry_news": "行业动态",
     "follow_us": "关注我们",
-    "hotline": "全国服务热线",
-    "marketing_email": "市场合作邮箱",
-    "sales_email": "销售合作邮箱",
-    "service_email": "售后服务邮箱",
-    "wechat_mp": "龟彩官方公众号",
-    "get_updates": "[获取最新品牌资讯]",
-    "app_name": "龟彩 APP",
-    "app_desc": "[智能设备互联]",
-    "brand_story": "品牌故事",
-    "brand_strength": "品牌实力",
-    "cooperation": "异业合作",
-    "license": "企业营业执照",
-    "address_label": "联系地址",
-    "address_value": "河南省郑州市金水区兴达路街道惠科路33号西亚斯科教产业园10号楼4层",
-    "phone_label": "联系电话"
+    "hotline": "服务热线",
+    "marketing_email": "市场合作",
+    "sales_email": "销售咨询",
+    "service_email": "技术支持",
+    "wechat_mp": "微信公众号",
+    "get_updates": "获取最新动态",
+    "app_name": "龟彩 App",
+    "app_desc": "一键色彩管理",
+    "license": "营业执照",
+    "phone_label": "电话",
+    "address_label": "地址",
+    "address_value": "中国河南省郑州市金水区慧科路 33 号西亚斯科教产业园 10 号楼 4 层",
+    "qr_placeholder": "二维码占位"
+  },
+  "products_page": {
+    "view_details": "了解详情",
+    "collapse_details": "收起详情",
+    "tech_specs": "技术规格",
+    "core_advantages": "核心优势",
+    "min_volume": "最小调配量",
+    "precision": "色彩精度",
+    "capacity": "配方库容量",
+    "scenarios": "适用场景",
+    "fast_response": "#快速响应",
+    "zero_waste": "#零浪费",
+    "silent_run": "#静音运行",
+    "redefine_workflow": "重新定义桌面色彩工作流",
+    "redefine_desc": "从灵感到实物，只需一键。让设计师和调色师从繁琐的手工调色中解放出来，专注于色彩创造本身。",
+    "production_boost": "产能提升",
+    "pass_rate": "合格率",
+    "maintenance_cost": "维护成本",
+    "industry_4_0": "工业 4.0 准备就绪",
+    "industry_desc": "全面支持 MES/ERP 系统集成，数据实时上传，生产过程全链路可追溯。支持远程诊断与 OTA 升级，确保产线始终保持最佳状态。",
+    "consumables": "原装耗材系列",
+    "pigments": "纳米级环保色浆",
+    "cleaner": "专用清洗液",
+    "service_pack": "无忧服务包",
+    "quarterly_check": "每季度上门巡检校准",
+    "parts_replacement": "易损件免费更换",
+    "support_24h": "24小时技术专家在线支持",
+    "emergency_response": "紧急故障4小时内响应",
+    "desktop_details": [
+      "高精度色彩匹配算法",
+      "实验室级微量调配",
+      "智能云端配方管理",
+      "紧凑型桌面设计"
+    ],
+    "industrial_details": [
+      "大规模自动化生产线",
+      "实时色彩质量监控",
+      "多工位协同作业",
+      "工业级耐用性"
+    ],
+    "accessories_details": [
+      "原装高纯度色浆",
+      "精密泵头与管路",
+      "定期维护保养包",
+      "专业校准工具"
+    ]
+  },
+  "solutions_page": {
+    "view_solution": "查看方案",
+    "collapse_solution": "收起方案",
+    "paint": {
+      "desc": "建筑涂料、工业漆的精准调色",
+      "detail": "针对建筑涂料和工业防腐漆的高粘度特性，我们研发了专用的高扭矩精密泵头，配合自适应流速控制算法，确保即使是高粘度涂料也能实现微克级的精准调配。同时，系统内置了主流色卡数据库，支持现场配色和云端校色。",
+      "highlight1": "高粘度适应性",
+      "highlight2": "耐候性测试支持",
+      "highlight3": "现场配色便携版"
+    },
+    "ink": {
+      "desc": "包装印刷与特种油墨配色",
+      "detail": "面向包装印刷行业对专色一致性的严苛要求，我们的智能调墨系统能够精确控制每一种基墨的比例，大幅减少废墨产生。支持 UV 油墨、水性油墨等多种介质，内置光谱仪实时检测印刷样张色彩，自动修正配方。",
+      "highlight1": "专色精准复刻",
+      "highlight2": "废墨减排",
+      "highlight3": "印刷机联机校准"
+    },
+    "beauty": {
+      "desc": "粉底、口红等彩妆个性化定制",
+      "detail": "为新零售场景打造的微型调色工作站。消费者只需扫描面部肤色或选择心仪色号，设备即可在 3 分钟内现场调配出专属的粉底液或口红。全封闭无菌灌装，符合化妆品卫生标准，带来全新的沉浸式消费体验。",
+      "highlight1": "个性化定制体验",
+      "highlight2": "无菌灌装工艺",
+      "highlight3": "3分钟快速交付"
+    },
+    "art": {
+      "desc": "颜料与画材的灵感调配",
+      "detail": "赋能艺术家和修复师，重现失传的古代颜料或创造全新的艺术色彩。我们的系统记录每一次调色的详细配方，建立艺术家的个人色彩档案。支持油画颜料、丙烯、水彩等多种画材的精准调配。",
+      "highlight1": "无限色域拓展",
+      "highlight2": "历史色彩复原",
+      "highlight3": "个人色彩档案库"
+    }
   }
 }
