@@ -43,7 +43,7 @@ export default function AboutPage() {
       <div className="w-full px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {features.map((feature) => (
-            <div key={feature.key} className="bg-gray-50 rounded-3xl p-10 border border-gray-100">
+            <div key={feature.key} id={feature.key} className="bg-gray-50 rounded-3xl p-10 border border-gray-100 scroll-mt-32">
               <div className="bg-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-sm mb-8">
                 {feature.icon}
               </div>

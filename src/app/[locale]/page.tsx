@@ -19,14 +19,16 @@ export default function Home() {
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-transparent to-white"></div>
         
         <div className="w-full px-6 lg:px-12 text-center">
-          {/* GUICAI Logo Recreated with CSS - Larger & More Impactful */}
-          <div className="flex justify-center items-center mb-12 select-none scale-[1.8] md:scale-[2.5] transform-gpu space-x-2 py-20">
-            <span className="text-9xl font-black tracking-tighter text-red-600/90 mix-blend-multiply z-10 drop-shadow-2xl">G</span>
-            <span className="text-9xl font-black tracking-tighter text-yellow-400/90 mix-blend-multiply z-20 drop-shadow-2xl">U</span>
-            <span className="text-9xl font-black tracking-tighter text-lime-500/90 mix-blend-multiply z-30 drop-shadow-2xl">I</span>
-            <span className="text-9xl font-black tracking-tighter text-teal-500/90 mix-blend-multiply z-40 drop-shadow-2xl">C</span>
-            <span className="text-9xl font-black tracking-tighter text-blue-600/90 mix-blend-multiply z-50 drop-shadow-2xl">A</span>
-            <span className="text-9xl font-black tracking-tighter text-purple-600/90 mix-blend-multiply z-60 drop-shadow-2xl">I</span>
+          {/* GUICAI Logo Recreated with CSS - Responsive & Overlapping */}
+          <div className="flex justify-center items-center mb-12 select-none transform-gpu py-20 w-[80vw] mx-auto">
+            <div className="flex -space-x-[0.10em] text-[33vw] lg:text-[18vw] font-black tracking-tighter leading-none">
+              <span className="text-red-600/90 mix-blend-multiply z-10 drop-shadow-2xl">G</span>
+              <span className="text-yellow-400/90 mix-blend-multiply z-20 drop-shadow-2xl">U</span>
+              <span className="text-lime-500/90 mix-blend-multiply z-30 drop-shadow-2xl">i</span>
+              <span className="text-teal-500/90 mix-blend-multiply z-40 drop-shadow-2xl">C</span>
+              <span className="text-blue-600/90 mix-blend-multiply z-50 drop-shadow-2xl">A</span>
+              <span className="text-purple-600/90 mix-blend-multiply z-60 drop-shadow-2xl">i</span>
+            </div>
           </div>
 
           <p className="text-2xl md:text-3xl font-bold text-gray-700 mb-10 tracking-tight">
@@ -70,7 +72,7 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[800px]">
             {/* Item 1: Large Vertical */}
-            <div className="md:col-span-4 md:row-span-2 group relative rounded-3xl overflow-hidden bg-blue-600">
+            <div className="md:col-span-4 md:row-span-2 group relative rounded-3xl overflow-hidden bg-blue-600 h-64 md:h-auto">
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-60 group-hover:opacity-40 transition-opacity duration-500 scale-100 group-hover:scale-110"></div>
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80"></div>
               <div className="absolute bottom-0 left-0 p-8 transform transition-transform duration-500 group-hover:-translate-y-2">
@@ -81,7 +83,7 @@ export default function Home() {
             </div>
 
             {/* Item 2: Horizontal Top */}
-            <div className="md:col-span-4 md:row-span-1 group relative rounded-3xl overflow-hidden bg-purple-600">
+            <div className="md:col-span-4 md:row-span-1 group relative rounded-3xl overflow-hidden bg-purple-600 h-48 md:h-auto">
               <div className="absolute inset-0 bg-[url('/meizhuang.jpg')] bg-cover bg-center opacity-60 group-hover:opacity-40 transition-opacity duration-500 scale-100 group-hover:scale-110"></div>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-900/80 to-transparent transition-all duration-500 group-hover:from-purple-900/90"></div>
               <div className="absolute bottom-0 left-0 p-8 transform transition-transform duration-500 group-hover:-translate-y-2">
@@ -91,7 +93,7 @@ export default function Home() {
             </div>
 
             {/* Item 3: Square */}
-            <div className="md:col-span-4 md:row-span-1 group relative rounded-3xl overflow-hidden bg-yellow-500">
+            <div className="md:col-span-4 md:row-span-1 group relative rounded-3xl overflow-hidden bg-yellow-500 h-48 md:h-auto">
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-60 group-hover:opacity-40 transition-opacity duration-500 scale-100 group-hover:scale-110"></div>
               <div className="absolute inset-0 bg-gradient-to-tr from-yellow-900/50 to-yellow-500/50 mix-blend-overlay"></div>
               <div className="absolute inset-0 flex items-center justify-center">
@@ -103,7 +105,7 @@ export default function Home() {
             </div>
 
             {/* Item 4: Horizontal Bottom */}
-            <div className="md:col-span-5 md:row-span-1 group relative rounded-3xl overflow-hidden bg-pink-600">
+            <div className="md:col-span-5 md:row-span-1 group relative rounded-3xl overflow-hidden bg-pink-600 h-48 md:h-auto">
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-60 group-hover:opacity-40 transition-opacity duration-500 scale-100 group-hover:scale-110"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-pink-900/90 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 w-full flex justify-between items-end">
@@ -116,46 +118,52 @@ export default function Home() {
             </div>
 
             {/* Item 5: Vertical Right */}
-            <div className="md:col-span-3 md:row-span-1 group relative rounded-3xl overflow-hidden bg-teal-600">
+            <div className="md:col-span-3 md:row-span-1 group relative rounded-3xl overflow-hidden bg-teal-600 h-48 md:h-auto">
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-60 group-hover:opacity-40 transition-opacity duration-500 scale-100 group-hover:scale-110"></div>
               <div className="absolute inset-0 bg-teal-900/40 hover:bg-teal-900/20 transition-colors"></div>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full">
                 <h3 className="text-3xl font-black text-white mb-2">FUTURE</h3>
                 <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-xs font-bold text-white">TECH</span>
               </div>
+              <ArrowRight className="w-8 h-8 text-white flex-shrink-0 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all duration-300" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-24">
+      {/* Features Section - Dark Mode Redesign */}
+      <section className="py-24 bg-[#0a0a0a] border-t border-gray-900">
         <div className="w-full px-6 lg:px-12">
-          <div className="grid md:grid-cols-3 gap-12">
-            <div className="flex flex-col items-start">
-              <div className="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-6">
-                <Leaf className="w-6 h-6" />
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Feature 1 */}
+            <div className="group p-8 rounded-3xl bg-gray-900/50 hover:bg-gray-900 transition-all duration-300 hover:shadow-2xl hover:shadow-green-900/10 border border-gray-800 hover:border-green-900/30">
+              <div className="w-14 h-14 bg-green-900/20 text-green-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-inner shadow-green-900/20">
+                <Leaf className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{t('features.eco.title')}</h3>
-              <p className="text-gray-500 leading-relaxed">
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-green-400 transition-colors">{t('features.eco.title')}</h3>
+              <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
                 {t('features.eco.description')}
               </p>
             </div>
-            <div className="flex flex-col items-start">
-              <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6">
-                <Award className="w-6 h-6" />
+
+            {/* Feature 2 */}
+            <div className="group p-8 rounded-3xl bg-gray-900/50 hover:bg-gray-900 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/10 border border-gray-800 hover:border-blue-900/30">
+              <div className="w-14 h-14 bg-blue-900/20 text-blue-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-inner shadow-blue-900/20">
+                <Award className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{t('features.quality.title')}</h3>
-              <p className="text-gray-500 leading-relaxed">
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors">{t('features.quality.title')}</h3>
+              <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
                 {t('features.quality.description')}
               </p>
             </div>
-            <div className="flex flex-col items-start">
-              <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6">
-                <Layers className="w-6 h-6" />
+
+            {/* Feature 3 */}
+            <div className="group p-8 rounded-3xl bg-gray-900/50 hover:bg-gray-900 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-900/10 border border-gray-800 hover:border-purple-900/30">
+              <div className="w-14 h-14 bg-purple-900/20 text-purple-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-inner shadow-purple-900/20">
+                <Layers className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{t('features.custom.title')}</h3>
-              <p className="text-gray-500 leading-relaxed">
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-purple-400 transition-colors">{t('features.custom.title')}</h3>
+              <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
                 {t('features.custom.description')}
               </p>
             </div>

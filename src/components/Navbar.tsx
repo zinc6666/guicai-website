@@ -139,10 +139,15 @@ export default function Navbar() {
                       <div className="absolute top-full left-1/2 -translate-x-1/2 pt-6 w-72">
                         <div className="bg-white/95 backdrop-blur-xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 rounded-2xl p-3 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-500 ease-out">
                           {item.subItems.map((subItem) => (
-                            <div key={subItem.key} className="px-5 py-4 hover:bg-gray-50 rounded-xl cursor-pointer transition-colors duration-200 group/item">
+                            <Link 
+                              key={subItem.key} 
+                              href={`${item.href}#${subItem.key}`}
+                              className="block px-5 py-4 hover:bg-gray-50 rounded-xl cursor-pointer transition-colors duration-200 group/item"
+                              onClick={() => setHoveredMenu(null)}
+                            >
                               <h4 className="text-base font-bold text-gray-900 mb-1 group-hover/item:text-blue-600 transition-colors">{subItem.title}</h4>
                               <p className="text-xs text-gray-500">{subItem.desc}</p>
-                            </div>
+                            </Link>
                           ))}
                         </div>
                       </div>
@@ -188,10 +193,15 @@ export default function Navbar() {
                 </Link>
                 <div className="pl-4 space-y-4 border-l-2 border-gray-100">
                   {item.subItems.map((subItem) => (
-                    <div key={subItem.key}>
+                    <Link 
+                      key={subItem.key} 
+                      href={`${item.href}?expand=${subItem.key}`}
+                      className="block hover:text-blue-600 transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
                       <h4 className="text-base font-medium text-gray-800">{subItem.title}</h4>
                       <p className="text-xs text-gray-500 mt-1">{subItem.desc}</p>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>

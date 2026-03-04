@@ -57,7 +57,8 @@ export default function CulturePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {values.map((value) => (
             <div 
-              key={value.key} 
+              key={value.key}
+              id={value.key} 
               className={`rounded-3xl p-12 ${value.bg} border-2 ${value.border} text-center group hover:shadow-xl transition-all duration-300 cursor-pointer relative overflow-hidden`}
               onClick={() => toggleValue(value.key)}
             >
@@ -89,21 +90,22 @@ export default function CulturePage() {
         </div>
 
         {/* Story Section */}
-        <div className="mt-24 grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2 className="text-4xl font-bold mb-8">{t('culture_page.story.title')}</h2>
-            <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
-              <p>
-                {t('culture_page.story.p1')}
-              </p>
-              <p>
-                {t('culture_page.story.p2')}
-              </p>
+        <div className="mt-24 grid md:grid-cols-2 gap-16 items-start">
+          <div className="prose prose-lg text-gray-600">
+            <h2 className="text-4xl font-bold mb-8 text-gray-900">{t('culture_page.story.title')}</h2>
+            <div className="space-y-6 leading-relaxed">
+              <p>{t('culture_page.story.p1')}</p>
+              <p>{t('culture_page.story.p2')}</p>
+              <p>{t('culture_page.story.p3')}</p>
+              <p>{t('culture_page.story.p4')}</p>
+              <p>{t('culture_page.story.p5')}</p>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-96 flex items-center justify-center">
-            {/* Placeholder for an image */}
-            <span className="text-gray-400 font-medium">公司环境/团队合影</span>
+          <div className="sticky top-32">
+            <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-[600px] flex items-center justify-center shadow-lg">
+              {/* Placeholder for an image */}
+              <span className="text-gray-400 font-medium">公司环境/团队合影</span>
+            </div>
           </div>
         </div>
       </div>

@@ -73,7 +73,7 @@ export default function ProductsPage() {
                 </li>
                 <li className="flex justify-between">
                   <span>适用场景</span>
-                  <span className="font-bold">实验室、门店、设计室</span>
+                  <span className="font-bold">实验室、美甲美发门店、设计室</span>
                 </li>
               </ul>
             </div>

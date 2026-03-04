@@ -7,7 +7,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const slides = [
   {
     id: 1,
-    image: '/team-guicai.jpg',
+    image: '/guicai.jpg',
     title: '凝聚色彩力量',
     subtitle: '只为呈现最精准的每一抹色彩'
   },
