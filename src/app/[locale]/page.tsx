@@ -31,9 +31,35 @@ export default function Home() {
             </div>
           </div>
 
-          <p className="text-2xl md:text-3xl font-bold text-gray-700 mb-10 tracking-tight">
-            {t('hero.subtitle')}
-          </p>
+          {/* Artistic Diagonal Text Layout */}
+          <div className="relative w-full max-w-5xl mx-auto mb-24 px-4">
+            {/* Top Left Text */}
+            <div className="flex justify-start relative z-10">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-800 tracking-tight leading-tight drop-shadow-sm text-left">
+                {t('hero.subtitle_1')}
+              </h2>
+            </div>
+
+            {/* Decorative Image - Floating Top Right */}
+            <div className="absolute top-0 right-0 md:right-10 w-24 h-24 md:w-40 md:h-40 transform -translate-y-1/3 translate-x-4 md:translate-x-1/2 rotate-6 z-0 hover:rotate-12 transition-transform duration-500">
+              <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white/80 backdrop-blur-sm">
+                <Image 
+                  src="/tree.jpg" 
+                  alt="Nature & Vitality" 
+                  fill 
+                  className="object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Bottom Right Text */}
+            <div className="flex justify-end mt-12 md:mt-20 relative z-10">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 tracking-tight leading-tight drop-shadow-sm text-right">
+                {t('hero.subtitle_2')}
+              </h2>
+            </div>
+          </div>
+
           <p className="mt-4 text-xl text-gray-500 max-w-2xl mx-auto mb-10">
             {t('hero.description')}
           </p>
