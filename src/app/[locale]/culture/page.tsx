@@ -52,45 +52,82 @@ export default function CulturePage() {
         </p>
       </div>
 
-      {/* Culture Values */}
-      <div className="w-full px-6 lg:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {values.map((value) => (
-            <div 
-              key={value.key}
-              id={value.key} 
-              className={`rounded-3xl p-12 ${value.bg} border-2 ${value.border} text-center group hover:shadow-xl transition-all duration-300 cursor-pointer relative overflow-hidden`}
-              onClick={() => toggleValue(value.key)}
-            >
-              <div className="bg-white w-24 h-24 rounded-full flex items-center justify-center shadow-md mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
-                {value.icon}
-              </div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">{value.title}</h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">{value.desc}</p>
-              
-              {/* Expand Indicator */}
-              <div className={`flex justify-center transition-transform duration-300 ${expandedValue === value.key ? 'rotate-180' : ''}`}>
-                <ChevronDown className="w-6 h-6 text-gray-400" />
-              </div>
-
-              {/* Expandable Content */}
+      {/* Culture Values - Desktop Horizontal Accordion & Mobile Vertical Stack */}
+      <div className="w-full px-6 lg:px-12 mb-20">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-4 md:h-[600px]">
+          {values.map((value) => {
+            const isExpanded = expandedValue === value.key;
+            return (
               <div 
-                className={`grid transition-all duration-500 ease-in-out ${
-                  expandedValue === value.key ? 'grid-rows-[1fr] opacity-100 mt-6' : 'grid-rows-[0fr] opacity-0'
-                }`}
+                key={value.key}
+                id={value.key} 
+                className={`
+                  relative rounded-3xl border-2 ${value.border} ${value.bg} overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] cursor-pointer
+                  flex flex-col
+                  ${/* Mobile styles */ ''}
+                  w-full md:w-auto
+                  ${/* Desktop styles */ ''}
+                  md:h-full
+                  ${isExpanded ? 'md:flex-[3]' : 'md:flex-1 hover:md:flex-[1.2]'}
+                `}
+                onClick={() => toggleValue(value.key)}
               >
-                <div className="overflow-hidden">
-                  <p className="text-gray-700 leading-relaxed text-left bg-white/50 p-6 rounded-xl backdrop-blur-sm">
-                    {value.detail}
-                  </p>
+                {/* Content Container */}
+                <div className="flex flex-col h-full p-8 md:p-10 relative z-10">
+                  {/* Icon & Header */}
+                  <div className={`flex flex-col md:flex-row items-center md:items-start gap-6 transition-all duration-500 ${isExpanded ? 'md:mb-8' : 'md:mb-0 md:justify-center md:h-full'}`}>
+                    <div className={`bg-white w-20 h-20 md:w-24 md:h-24 rounded-full flex-shrink-0 flex items-center justify-center shadow-md transition-all duration-500 ${isExpanded ? '' : 'md:scale-110'}`}>
+                      {value.icon}
+                    </div>
+                    
+                    <div className={`text-center md:text-left transition-all duration-500 ${isExpanded ? 'opacity-100' : 'md:opacity-0 md:w-0 md:hidden'}`}>
+                      <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-2 whitespace-nowrap">{value.title}</h2>
+                      <p className="text-gray-600 font-medium">{value.desc}</p>
+                    </div>
+                  </div>
+
+                  {/* Collapsed Title for Desktop (Vertical Mode) */}
+                  {!isExpanded && (
+                    <div className="hidden md:flex absolute inset-0 items-center justify-center pointer-events-none">
+                      <div className="mt-32 text-center">
+                        <h2 className="text-2xl font-bold text-gray-900 mb-2">{value.title}</h2>
+                        <ChevronDown className="w-6 h-6 text-gray-400 mx-auto animate-bounce mt-4" />
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Detail Content (Desktop & Mobile) */}
+                  <div 
+                    className={`
+                      transition-all duration-700 ease-in-out overflow-hidden
+                      ${/* Mobile: Grid Expand */ ''}
+                      ${isExpanded ? 'grid-rows-[1fr] opacity-100 mt-6 md:mt-0' : 'grid-rows-[0fr] opacity-0 h-0 md:h-auto'}
+                      md:block md:flex-1
+                    `}
+                  >
+                     <div className={`${isExpanded ? 'block' : 'hidden'} md:block h-full overflow-y-auto pr-2 custom-scrollbar`}>
+                        <div className="bg-white/60 backdrop-blur-sm p-6 md:p-8 rounded-2xl text-lg text-gray-700 leading-relaxed shadow-sm border border-white/50">
+                          {value.detail}
+                        </div>
+                     </div>
+                  </div>
+                  
+                  {/* Mobile Toggle Icon */}
+                  <div className={`md:hidden flex justify-center mt-4 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}>
+                    <ChevronDown className="w-6 h-6 text-gray-400" />
+                  </div>
                 </div>
+
+                {/* Background Decoration */}
+                <div className={`absolute -bottom-20 -right-20 w-64 h-64 bg-white/20 rounded-full blur-3xl transition-opacity duration-500 ${isExpanded ? 'opacity-100' : 'opacity-0'}`} />
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
+      </div>
 
         {/* Story Section */}
-        <div className="mt-24 grid md:grid-cols-2 gap-16 items-start">
+        <div className="w-full px-6 lg:px-12 mt-24 grid md:grid-cols-2 gap-16 items-start">
           <div className="prose prose-lg text-gray-600">
             <h2 className="text-4xl font-bold mb-8 text-gray-900">{t('culture_page.story.title')}</h2>
             <div className="space-y-6 leading-relaxed">
@@ -109,6 +146,5 @@ export default function CulturePage() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
