@@ -39,18 +39,22 @@ export default function Home() {
                 {t('hero.subtitle_1')}
               </h2>
             </div>
+            
+
 
             {/* Decorative Image - Floating Top Right */}
-            <div className="absolute top-0 right-0 md:right-10 w-24 h-24 md:w-40 md:h-40 transform -translate-y-1/3 translate-x-4 md:translate-x-1/2 rotate-6 z-0 hover:rotate-12 transition-transform duration-500">
+            <div className="absolute top-0 right-0 md:right-10 w-24 h-24 md:w-40 md:h-40 transform -translate-y-3/3 translate-x-4 md:translate-x-1/2 rotate-6 z-0 hover:rotate-12 transition-transform duration-500">
               <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white/80 backdrop-blur-sm">
                 <Image 
-                  src="/tree.jpg" 
+                  src="/gui4.jpg" 
                   alt="Nature & Vitality" 
                   fill 
                   className="object-cover"
                 />
               </div>
             </div>
+
+
 
             {/* Bottom Right Text */}
             <div className="flex justify-end mt-12 md:mt-20 relative z-10">
@@ -310,7 +314,7 @@ export default function Home() {
           {/* Bottom Copyright */}
           <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-xs space-y-2">
             <div className="flex flex-wrap justify-center gap-4">
-              <span>豫ICP备xxxxxxxx号</span>
+              <span>豫ICP备2026008298号</span>
               <span>豫公网安备xxxxxxxxxxxxxx号</span>
               <span>{t('footer.license')}</span>
             </div>
