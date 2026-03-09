@@ -48,7 +48,7 @@ export default function CulturePage() {
       <div className="w-full px-6 lg:px-12 mb-20 text-center">
         <h1 className="text-5xl font-extrabold mb-8 tracking-tight">{t('nav.about')}</h1>
         <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed italic">
-          "{t('hero.subtitle')}"
+          "{t('艺术不应止步于调色 龟彩赋予你新的活力')}"
         </p>
       </div>
 
