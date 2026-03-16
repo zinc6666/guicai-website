@@ -34,9 +34,14 @@ export default function AboutPage() {
       {/* Header */}
       <div className="w-full px-6 lg:px-12 mb-20">
         <h1 className="text-5xl font-extrabold mb-6 tracking-tight">{t('nav.sustainability')}</h1>
-        <p className="text-xl text-gray-500 max-w-3xl leading-relaxed">
-          {t('hero.subtitle')}
-        </p>
+          <div className="space-y-2">
+           <p className="text-xl text-gray-500 max-w-3xl leading-relaxed">
+             {t('hero.subtitle_1')}
+           </p>
+           <p className="text-lg text-primary-500 font-medium">
+             {t('hero.subtitle_2')}
+           </p>
+        </div>
       </div>
 
       {/* Content Sections */}

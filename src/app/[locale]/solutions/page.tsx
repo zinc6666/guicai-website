@@ -87,64 +87,86 @@ export default function SolutionsPage() {
 
       {/* Solutions Grid */}
       <div className="w-full px-6 lg:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-12">
           {solutions.map((solution) => (
             <div 
               key={solution.key} 
-              className={`group relative overflow-hidden rounded-3xl border border-gray-100 transition-all duration-500 bg-white ${
+              className={`group bg-white border border-gray-100 rounded-3xl transition-all duration-500 overflow-hidden ${
                 expandedSolution === solution.key ? 'shadow-2xl ring-1 ring-black/5' : 'hover:shadow-xl hover:border-gray-200'
               }`}
             >
-              <div className="p-8 md:p-10 flex flex-col h-full">
-                <div className="flex items-start justify-between mb-6">
-                  <div className={`p-4 rounded-2xl ${solution.image} shadow-sm group-hover:scale-105 transition-transform duration-500`}>
-                    {solution.icon}
+              {/* Main Card Content */}
+              <div className="p-10 grid md:grid-cols-3 gap-8 items-start">
+                <div className="md:col-span-2">
+                  <div className="flex items-center gap-6 mb-6">
+                    <div className={`w-20 h-20 rounded-2xl flex items-center justify-center shadow-sm transition-transform duration-300 ${
+                      expandedSolution === solution.key ? 'bg-black text-white scale-110' : 'bg-gray-50 group-hover:scale-110'
+                    }`}>
+                      {solution.icon}
+                    </div>
+                    <div>
+                      <h2 className="text-3xl font-bold text-gray-900">{solution.title}</h2>
+                      <p className="text-lg text-gray-500 mt-1">{solution.desc}</p>
+                    </div>
                   </div>
-                  <div className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider ${solution.highlightBg} ${solution.accent}`}>
-                    Solution
-                  </div>
+                  
+                  {/* Optional: Show highlights as list items here if desired, or keep them in the expanded section. Let's keep them in expanded section like before to match products, or show them here. Let's put a brief text here if needed, or just leave it. Products page has `details` here. We can use `highlights` here. */}
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+                    {solution.highlights.map((highlight, index) => (
+                      <li key={index} className="flex items-center text-gray-700">
+                        <span className={`w-2 h-2 rounded-full mr-3 ${
+                          expandedSolution === solution.key ? 'bg-black' : 'bg-blue-500'
+                        }`}></span>
+                        {highlight}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
-                <h3 className="text-3xl font-bold mb-4 text-gray-900">{solution.title}</h3>
-                <p className="text-lg text-gray-500 leading-relaxed mb-8">{solution.desc}</p>
-                
-                {/* Expanded Content */}
-                <div 
-                  className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                    expandedSolution === solution.key ? 'max-h-[600px] opacity-100 mb-8' : 'max-h-0 opacity-0'
-                  }`}
-                >
-                  <div className="pt-4 border-t border-gray-100">
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      {solution.detail}
-                    </p>
-                    <h4 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
-                      <Award className={`w-5 h-5 ${solution.accent}`} /> {t('products_page.core_advantages')}
-                    </h4>
-                    <ul className="space-y-3">
-                      {solution.highlights.map((highlight, index) => (
-                        <li key={index} className="flex items-center gap-3 text-gray-700 bg-gray-50 p-3 rounded-xl">
-                          <Check className={`w-5 h-5 ${solution.accent}`} />
-                          <span className="font-medium">{highlight}</span>
-                        </li>
-                      ))}
-                    </ul>
+                <div className="md:col-span-1 flex flex-col justify-center h-full">
+                  <button 
+                    onClick={() => toggleSolution(solution.key)}
+                    className={`w-full py-4 rounded-xl font-bold transition-all duration-300 flex items-center justify-center gap-2 ${
+                      expandedSolution === solution.key 
+                        ? 'bg-black text-white shadow-lg scale-105' 
+                        : 'bg-gray-50 text-gray-900 hover:bg-gray-100'
+                    }`}
+                  >
+                    {expandedSolution === solution.key ? t('solutions_page.collapse_solution') : t('solutions_page.view_solution')}
+                    <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${
+                      expandedSolution === solution.key ? 'rotate-180' : ''
+                    }`} />
+                  </button>
+                </div>
+              </div>
+
+              {/* Expandable Details Section */}
+              <div 
+                id={`details-${solution.key}`}
+                className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                  expandedSolution === solution.key ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
+                }`}
+              >
+                <div className="p-10 pt-0 border-t border-gray-100 bg-gray-50/50">
+                  <div className="pt-10 animate-in fade-in slide-in-from-top-4 duration-500">
+                    <div className="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm">
+                      <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                        {solution.detail}
+                      </p>
+                      <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                        <Award className={`w-6 h-6 ${solution.accent}`} /> {t('products_page.core_advantages')}
+                      </h4>
+                      <ul className="grid md:grid-cols-3 gap-4">
+                        {solution.highlights.map((highlight, index) => (
+                          <li key={index} className={`flex items-center gap-3 text-gray-700 ${solution.highlightBg} p-4 rounded-xl`}>
+                            <Check className={`w-5 h-5 ${solution.accent}`} />
+                            <span className="font-medium">{highlight}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
-
-                <button 
-                  onClick={() => toggleSolution(solution.key)}
-                  className={`mt-auto w-full py-4 rounded-xl font-bold transition-all duration-300 flex items-center justify-center gap-2 group/btn ${
-                    expandedSolution === solution.key 
-                      ? 'bg-black text-white' 
-                      : 'bg-gray-50 text-gray-900 hover:bg-gray-100'
-                  }`}
-                >
-                  {expandedSolution === solution.key ? t('solutions_page.collapse_solution') : t('solutions_page.view_solution')}
-                  <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${
-                    expandedSolution === solution.key ? 'rotate-180' : 'group-hover/btn:translate-y-1'
-                  }`} />
-                </button>
               </div>
             </div>
           ))}

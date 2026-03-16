@@ -48,81 +48,73 @@ export default function CulturePage() {
       <div className="w-full px-6 lg:px-12 mb-20 text-center">
         <h1 className="text-5xl font-extrabold mb-8 tracking-tight">{t('nav.about')}</h1>
         <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed italic">
-          "{t('艺术不应止步于调色 龟彩赋予你新的活力')}"
+          "{t('hero.subtitle_1')}
+        </p>
+        <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed italic">
+          {t('hero.subtitle_2')}"
         </p>
       </div>
 
-      {/* Culture Values - Desktop Horizontal Accordion & Mobile Vertical Stack */}
+      {/* Culture Values - Products Style Layout */}
       <div className="w-full px-6 lg:px-12 mb-20">
-        <div className="flex flex-col md:flex-row gap-6 md:gap-4 md:h-[600px]">
-          {values.map((value) => {
-            const isExpanded = expandedValue === value.key;
-            return (
-              <div 
-                key={value.key}
-                id={value.key} 
-                className={`
-                  relative rounded-3xl border-2 ${value.border} ${value.bg} overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] cursor-pointer
-                  flex flex-col
-                  ${/* Mobile styles */ ''}
-                  w-full md:w-auto
-                  ${/* Desktop styles */ ''}
-                  md:h-full
-                  ${isExpanded ? 'md:flex-[3]' : 'md:flex-1 hover:md:flex-[1.2]'}
-                `}
-                onClick={() => toggleValue(value.key)}
-              >
-                {/* Content Container */}
-                <div className="flex flex-col h-full p-8 md:p-10 relative z-10">
-                  {/* Icon & Header */}
-                  <div className={`flex flex-col md:flex-row items-center md:items-start gap-6 transition-all duration-500 ${isExpanded ? 'md:mb-8' : 'md:mb-0 md:justify-center md:h-full'}`}>
-                    <div className={`bg-white w-20 h-20 md:w-24 md:h-24 rounded-full flex-shrink-0 flex items-center justify-center shadow-md transition-all duration-500 ${isExpanded ? '' : 'md:scale-110'}`}>
+        <div className="grid grid-cols-1 gap-12">
+          {values.map((value) => (
+            <div 
+              key={value.key} 
+              id={value.key}
+              className={`group bg-white border border-gray-100 rounded-3xl transition-all duration-500 overflow-hidden ${
+                expandedValue === value.key ? 'shadow-2xl ring-1 ring-black/5' : 'hover:shadow-xl hover:border-gray-200'
+              }`}
+            >
+              {/* Main Card Content */}
+              <div className="p-10 grid md:grid-cols-3 gap-8 items-start">
+                <div className="md:col-span-2">
+                  <div className="flex items-center gap-6 mb-6">
+                    <div className={`w-20 h-20 rounded-2xl flex items-center justify-center shadow-sm transition-transform duration-300 ${
+                      expandedValue === value.key ? 'bg-black text-white scale-110' : `${value.bg} group-hover:scale-110`
+                    }`}>
                       {value.icon}
                     </div>
-                    
-                    <div className={`text-center md:text-left transition-all duration-500 ${isExpanded ? 'opacity-100' : 'md:opacity-0 md:w-0 md:hidden'}`}>
-                      <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-2 whitespace-nowrap">{value.title}</h2>
-                      <p className="text-gray-600 font-medium">{value.desc}</p>
+                    <div>
+                      <h2 className="text-3xl font-bold text-gray-900">{value.title}</h2>
+                      <p className="text-lg text-gray-500 mt-1">{value.desc}</p>
                     </div>
-                  </div>
-
-                  {/* Collapsed Title for Desktop (Vertical Mode) */}
-                  {!isExpanded && (
-                    <div className="hidden md:flex absolute inset-0 items-center justify-center pointer-events-none">
-                      <div className="mt-32 text-center">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-2">{value.title}</h2>
-                        <ChevronDown className="w-6 h-6 text-gray-400 mx-auto animate-bounce mt-4" />
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Detail Content (Desktop & Mobile) */}
-                  <div 
-                    className={`
-                      transition-all duration-700 ease-in-out overflow-hidden
-                      ${/* Mobile: Grid Expand */ ''}
-                      ${isExpanded ? 'grid-rows-[1fr] opacity-100 mt-6 md:mt-0' : 'grid-rows-[0fr] opacity-0 h-0 md:h-auto'}
-                      md:block md:flex-1
-                    `}
-                  >
-                     <div className={`${isExpanded ? 'block' : 'hidden'} md:block h-full overflow-y-auto pr-2 custom-scrollbar`}>
-                        <div className="bg-white/60 backdrop-blur-sm p-6 md:p-8 rounded-2xl text-lg text-gray-700 leading-relaxed shadow-sm border border-white/50">
-                          {value.detail}
-                        </div>
-                     </div>
-                  </div>
-                  
-                  {/* Mobile Toggle Icon */}
-                  <div className={`md:hidden flex justify-center mt-4 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}>
-                    <ChevronDown className="w-6 h-6 text-gray-400" />
                   </div>
                 </div>
 
-                {/* Background Decoration */}
-                <div className={`absolute -bottom-20 -right-20 w-64 h-64 bg-white/20 rounded-full blur-3xl transition-opacity duration-500 ${isExpanded ? 'opacity-100' : 'opacity-0'}`} />
+                <div className="md:col-span-1 flex flex-col justify-center h-full">
+                  <button 
+                    onClick={() => toggleValue(value.key)}
+                    className={`w-full py-4 rounded-xl font-bold transition-all duration-300 flex items-center justify-center gap-2 ${
+                      expandedValue === value.key 
+                        ? 'bg-black text-white shadow-lg scale-105' 
+                        : 'bg-gray-50 text-gray-900 hover:bg-gray-100'
+                    }`}
+                  >
+                    {expandedValue === value.key ? t('products_page.collapse_details') : t('products_page.view_details')}
+                    <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${
+                      expandedValue === value.key ? 'rotate-180' : ''
+                    }`} />
+                  </button>
+                </div>
               </div>
-            );
-          })}
+
+              {/* Expandable Details Section */}
+              <div 
+                className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                  expandedValue === value.key ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
+                }`}
+              >
+                <div className="p-10 pt-0 border-t border-gray-100 bg-gray-50/50">
+                  <div className="pt-10 animate-in fade-in slide-in-from-top-4 duration-500">
+                    <div className="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm text-lg text-gray-700 leading-relaxed">
+                      {value.detail}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 

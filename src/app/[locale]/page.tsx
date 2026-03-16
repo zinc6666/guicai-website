@@ -275,10 +275,10 @@ export default function Home() {
                   {t('footer.follow_us')} <span className="text-green-500"><Globe className="w-5 h-5" /></span>
                 </h4>
                 <div className="space-y-2 text-sm text-gray-400">
-                  <p>{t('footer.hotline')}：<span className="text-white">138-xxxx-xxxx</span></p>
-                  <p>{t('footer.marketing_email')}：marketing@guicai.com</p>
-                  <p>{t('footer.sales_email')}：sales@guicai.com</p>
-                  <p>{t('footer.service_email')}：service@guicai.com</p>
+                  <p>{t('footer.hotline')}：<span className="text-white"> </span></p>
+                  <p>{t('footer.marketing_email')}：marketing@guicai.live</p>
+                  <p>{t('footer.sales_email')}：sales@guicai.live</p>
+                  <p>{t('footer.service_email')}：service@guicai.live</p>
                 </div>
               </div>
 

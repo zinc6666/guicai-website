@@ -22,8 +22,8 @@
         "value": "中国河南省郑州市金水区慧科路 33 号西亚斯科教产业园 10 号楼 4 层"
       },
       "phone": {
-        "title": "联系电话",
-        "value": "138-xxxx-xxxx"
+        "title": "合作邮箱",
+        "value": "marketing@guicai.com"
       },
       "email": {
         "title": "电子邮箱",
@@ -208,7 +208,7 @@
     "company_news": "公司新闻",
     "industry_news": "行业动态",
     "follow_us": "关注我们",
-    "hotline": "服务热线",
+    "hotline": "公司邮箱",
     "marketing_email": "市场合作",
     "sales_email": "销售咨询",
     "service_email": "技术支持",
