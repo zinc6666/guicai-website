@@ -21,13 +21,17 @@
         "title": "公司地址",
         "value": "中国河南省郑州市金水区慧科路 33 号西亚斯科教产业园 10 号楼 4 层"
       },
-      "phone": {
-        "title": "合作邮箱",
-        "value": "marketing@guicai.com"
+      "marketing": {
+        "title": "市场合作",
+        "value": "marketing@guicai.live"
       },
-      "email": {
-        "title": "电子邮箱",
-        "value": "guicai@zzgckjsyyxgs.wecom.work"
+      "sales": {
+        "title": "销售咨询",
+        "value": "sales@guicai.live"
+      },
+      "service": {
+        "title": "技术支持",
+        "value": "service@guicai.live"
       },
       "taobao": {
         "title": "淘宝店铺",

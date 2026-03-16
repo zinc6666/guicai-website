@@ -21,13 +21,17 @@
         "title": "Address",
         "value": "4th Floor,Building 10,Sias Education and Science Park,No.33,Huike    Road,Jinshui District,Zhengzhou City,Henan Province, China"
       },
-      "phone": {
-        "title": "Phone",
-        "value": "138-xxxx-xxxx"
+      "marketing": {
+        "title": "Marketing",
+        "value": "marketing@guicai.live"
       },
-      "email": {
-        "title": "Email",
-        "value": "guicai@zzgckjsyyxgs.wecom.work"
+      "sales": {
+        "title": "Sales",
+        "value": "sales@guicai.live"
+      },
+      "service": {
+        "title": "Support",
+        "value": "service@guicai.live"
       },
       "taobao": {
         "title": "Taobao Shop",

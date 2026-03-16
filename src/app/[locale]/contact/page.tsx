@@ -60,14 +60,19 @@ export default function ContactPage() {
       value: t('contact.info.address.value'),
     },
     {
-      icon: <Phone className="w-6 h-6 text-green-600" />,
-      title: t('contact.info.phone.title'),
-      value: t('contact.info.phone.value'),
+      icon: <Mail className="w-6 h-6 text-purple-600" />,
+      title: t('contact.info.marketing.title'),
+      value: t('contact.info.marketing.value'),
     },
     {
-      icon: <Mail className="w-6 h-6 text-purple-600" />,
-      title: t('contact.info.email.title'),
-      value: t('contact.info.email.value'),
+      icon: <Mail className="w-6 h-6 text-green-600" />,
+      title: t('contact.info.sales.title'),
+      value: t('contact.info.sales.value'),
+    },
+    {
+      icon: <Mail className="w-6 h-6 text-cyan-600" />,
+      title: t('contact.info.service.title'),
+      value: t('contact.info.service.value'),
     },
     {
       icon: <ShoppingCart className="w-6 h-6 text-orange-600" />,
