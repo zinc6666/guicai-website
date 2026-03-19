@@ -1,6 +1,7 @@
 {
   "common": {
-    "companyName": "Guicai"
+    "companyName": "Guicai",
+    "floating_community": "Artist Community Space"
   },
   "metadata": {
     "title": "Zhengzhou Guicai | Intelligent Desktop Color Mixing Expert",
@@ -11,6 +12,7 @@
     "solutions": "Applications",
     "sustainability": "About Us",
     "about": "Culture",
+    "gallery": "Gallery",
     "contact": "Contact"
   },
   "contact": {
@@ -45,6 +47,21 @@
       "message": "Message",
       "submit": "Send Message"
     }
+  },
+  "gallery": {
+    "title": "Inspiration Gallery",
+    "subtitle": "Art unbounded by color mixing. Share your color stories and creative inspiration here.",
+    "post_btn": "Share Inspiration",
+    "modal": {
+      "title": "Post Your Creation",
+      "image": "Image URL",
+      "image_placeholder": "Enter image URL...",
+      "message": "Story / Message",
+      "name": "Author",
+      "submit": "Publish",
+      "cancel": "Cancel"
+    },
+    "likes": "likes"
   },
   "menu": {
     "products": {
@@ -122,13 +139,14 @@
     }
   },
   "hero": {
-    "title": "Zhengzhou Guicai Technology",
-    "spectrum": "Industry Co., Ltd.",
+    "title_1": "Art Unbounded",
+    "title_2": "New Vitality",
     "subtitle_1": "Art Unbounded by Color Mixing",
     "subtitle_2": "Empowering New Vitality",
-    "description": "Founded on January 6, 2026, headquartered in Jinshui District, Zhengzhou. We are an innovative technology enterprise specializing in the R&D of intelligent desktop color mixing equipment, focusing on desktop color mixer technology and global technical services.",
-    "explore": "Our Products",
-    "request": "Cooperation"
+    "description": "We don't just manufacture equipment; we create a philosophy. Guicai is dedicated to the R&D of desktop color mixers and precise liquid dispensing equipment, making every drop of pigment an eternal masterpiece.",
+    "explore": "Explore Products",
+    "request": "Our Story",
+    "community_btn": "Enter Artist Community"
   },
   "trends": {
     "title": "Wide Application Areas",

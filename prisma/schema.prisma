@@ -1,0 +1,21 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Post {
+  id        String   @id @default(cuid())
+  imageUrl  String // Could be a path or a base64 string
+  imageBase64 String? // Optional field to store raw image data
+  author    String
+  message   String
+  likes     Int      @default(0)
+  createdAt DateTime @default(now())
+}

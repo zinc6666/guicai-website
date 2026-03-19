@@ -13,6 +13,13 @@ export default function Navbar() {
 
   const menuItems = [
     {
+      key: 'gallery',
+      href: '/gallery',
+      label: t('nav.gallery'),
+      type: 'link',
+      subItems: []
+    },
+    {
       key: 'products',
       href: '/products',
       label: t('nav.products'),
@@ -56,7 +63,7 @@ export default function Navbar() {
         { key: 'vision', title: t('menu.culture.vision.title'), desc: t('menu.culture.vision.desc') },
         { key: 'values', title: t('menu.culture.values.title'), desc: t('menu.culture.values.desc') },
       ]
-    },
+    }
   ];
 
   return (
@@ -78,11 +85,13 @@ export default function Navbar() {
               >
                 <Link 
                   href={item.href} 
-                  className={`relative px-2 py-2 text-base font-medium transition-colors duration-200 ${
+                  className={`relative px-2 py-2 text-base font-medium transition-colors duration-200 flex items-center gap-1 ${
+                    item.key === 'gallery' ? 'text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600 font-bold scale-105' : 
                     hoveredMenu === item.key ? 'text-black' : 'text-gray-600 hover:text-black'
                   }`}
                   onClick={() => setHoveredMenu(null)}
                 >
+                  {item.key === 'gallery' && <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse mr-1"></span>}
                   {item.label}
                   {/* Underline animation */}
                   <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-black transform origin-left transition-transform duration-300 ease-out ${
@@ -191,19 +200,21 @@ export default function Navbar() {
                 >
                   {item.label}
                 </Link>
-                <div className="pl-4 space-y-4 border-l-2 border-gray-100">
-                  {item.subItems.map((subItem) => (
-                    <Link 
-                      key={subItem.key} 
-                      href={`${item.href}?expand=${subItem.key}`}
-                      className="block hover:text-blue-600 transition-colors"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      <h4 className="text-base font-medium text-gray-800">{subItem.title}</h4>
-                      <p className="text-xs text-gray-500 mt-1">{subItem.desc}</p>
-                    </Link>
-                  ))}
-                </div>
+                {item.subItems && item.subItems.length > 0 && (
+                  <div className="pl-4 space-y-4 border-l-2 border-gray-100">
+                    {item.subItems.map((subItem) => (
+                      <Link 
+                        key={subItem.key} 
+                        href={`${item.href}?expand=${subItem.key}`}
+                        className="block hover:text-blue-600 transition-colors"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        <h4 className="text-base font-medium text-gray-800">{subItem.title}</h4>
+                        <p className="text-xs text-gray-500 mt-1">{subItem.desc}</p>
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
             <div className="pt-8 border-t border-gray-100">

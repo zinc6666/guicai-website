@@ -1,6 +1,7 @@
 {
   "common": {
-    "companyName": "龟彩"
+    "companyName": "龟彩",
+    "floating_community": "艺术家交流空间"
   },
   "metadata": {
     "title": "龟彩化工 | 优质染料与颜料",
@@ -11,6 +12,7 @@
     "solutions": "应用领域",
     "sustainability": "关于我们",
     "about": "企业文化",
+    "gallery": "灵感社区",
     "contact": "联系我们"
   },
   "contact": {
@@ -45,6 +47,21 @@
       "message": "留言内容",
       "submit": "发送留言"
     }
+  },
+  "gallery": {
+    "title": "灵感画廊",
+    "subtitle": "艺术不应止步于调色，在这里分享您的色彩故事与创作灵感",
+    "post_btn": "分享灵感",
+    "modal": {
+      "title": "发布您的创作",
+      "image": "图片链接 (URL)",
+      "image_placeholder": "输入图片网络链接...",
+      "message": "创作故事 / 留言",
+      "name": "作者",
+      "submit": "发布灵感",
+      "cancel": "取消"
+    },
+    "likes": "次赞赏"
   },
   "menu": {
     "products": {
@@ -122,13 +139,14 @@
     }
   },
   "hero": {
-    "title": "郑州龟彩科技实业",
-    "spectrum": "有限公司",
+    "title_1": "艺术不囿调色",
+    "title_2": "龟彩赋新生机",
     "subtitle_1": "艺术不应止步于调色",
     "subtitle_2": "龟彩赋予你新的活力",
-    "description": "成立于2026年1月6日，总部坐落于郑州市金水区。我们是一家专注于智能桌面调色设备研发的创新型科技企业，核心聚焦桌面调色机的技术研发与全球技术服务落地。",
-    "explore": "了解产品",
-    "request": "咨询合作"
+    "description": "我们不是简单地制造设备，我们在创造一种哲学。龟彩致力于桌面调色机和液体精准配给设备的研发，让每一滴颜料都成为永恒的杰作。",
+    "explore": "探索核心产品",
+    "request": "了解我们的故事",
+    "community_btn": "进入艺术家交流空间"
   },
   "trends": {
     "title": "广泛应用领域",

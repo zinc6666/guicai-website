@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Droplet, Layers, Award, Leaf, Search, Globe } from "lucide-react";
+import { ArrowRight, Droplet, Layers, Award, Leaf, Search, Globe, Sparkles } from "lucide-react";
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import TeamCarousel from "@/components/TeamCarousel";
@@ -64,6 +64,17 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="mt-8 mb-16 flex justify-center relative z-20">
+            <Link 
+              href="/gallery"
+              className="group relative inline-flex items-center gap-3 px-10 py-5 bg-black text-white rounded-full font-bold text-lg md:text-xl overflow-hidden transition-all hover:scale-105 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] border border-white/10"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <Sparkles className="w-6 h-6 relative z-10 text-yellow-300 animate-pulse" />
+              <span className="relative z-10">{t('hero.community_btn')}</span>
+            </Link>
+          </div>
+
           <p className="mt-4 text-xl text-gray-500 max-w-2xl mx-auto mb-10">
             {t('hero.description')}
           </p>
@@ -71,7 +82,7 @@ export default function Home() {
             <Link href="/products" className="px-8 py-3 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-colors flex items-center gap-2">
               {t('hero.explore')} <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="/about" className="px-8 py-3 bg-gray-100 text-gray-900 rounded-full font-medium hover:bg-gray-200 transition-colors">
+            <Link href="/culture" className="px-8 py-3 bg-gray-100 text-gray-900 rounded-full font-medium hover:bg-gray-200 transition-colors">
               {t('hero.request')}
             </Link>
           </div>
