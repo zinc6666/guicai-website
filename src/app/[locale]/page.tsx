@@ -326,11 +326,10 @@ export default function Home() {
           <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-xs space-y-2">
             <div className="flex flex-wrap justify-center gap-4">
               <span>豫ICP备2026008298号</span>
-              <span>豫公网安备xxxxxxxxxxxxxx号</span>
+              <span>豫公网安备41010502007499号</span>
               <span>{t('footer.license')}</span>
             </div>
             <div className="flex flex-wrap justify-center gap-4">
-              <span>{t('footer.phone_label')}：0371-xxxxxxxx</span>
               <span>{t('footer.address_label')}：{t('footer.address_value')}</span>
             </div>
             <p className="mt-4">
