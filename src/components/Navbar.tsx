@@ -36,10 +36,11 @@ export default function Navbar() {
       label: t('nav.solutions'),
       type: 'mega',
       subItems: [
-        { key: 'paint', title: t('menu.solutions.paint.title'), desc: t('menu.solutions.paint.desc') },
-        { key: 'ink', title: t('menu.solutions.ink.title'), desc: t('menu.solutions.ink.desc') },
-        { key: 'beauty', title: t('menu.solutions.beauty.title'), desc: t('menu.solutions.beauty.desc') },
-        { key: 'art', title: t('menu.solutions.art.title'), desc: t('menu.solutions.art.desc') },
+        { key: 'clothes', title: t('menu.solutions.clothes.title'), desc: t('menu.solutions.clothes.desc') },
+        { key: 'shoes', title: t('menu.solutions.shoes.title'), desc: t('menu.solutions.shoes.desc') },
+        { key: 'accessories', title: t('menu.solutions.accessories.title'), desc: t('menu.solutions.accessories.desc') },
+        { key: 'ceramics', title: t('menu.solutions.ceramics.title'), desc: t('menu.solutions.ceramics.desc') },
+        { key: 'handicrafts', title: t('menu.solutions.handicrafts.title'), desc: t('menu.solutions.handicrafts.desc') },
       ]
     },
     {

@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useState, useEffect, useRef } from 'react';
 import { Heart, Plus, X, Upload, Image as ImageIcon, Loader2 } from 'lucide-react';
+import { motion, type Variants } from 'framer-motion';
 
 interface Post {
   id: string;
@@ -130,23 +131,58 @@ export default function GalleryPage() {
     }
   };
 
+  const ease: [number, number, number, number] = [0.16, 1, 0.3, 1];
+
+  const pageReveal: Variants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.08, delayChildren: 0.12 }
+    }
+  };
+
+  const itemReveal: Variants = {
+    hidden: { opacity: 0, y: 26, scale: 0.985, filter: 'blur(8px)' },
+    show: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      filter: 'blur(0px)',
+      transition: { duration: 0.7, ease }
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#fafafa] text-gray-900 font-sans pt-32 pb-20">
       {/* Header */}
       <div className="w-full px-6 lg:px-12 mb-20 text-center">
-        <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-500">
-          {t('gallery.title')}
-        </h1>
-        <p className="text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
-          {t('gallery.subtitle')}
-        </p>
-        <button 
-          onClick={() => setIsModalOpen(true)}
-          className="mt-10 inline-flex items-center gap-2 px-10 py-4 bg-black text-white rounded-full font-bold hover:bg-gray-800 transition-all duration-300 hover:scale-105 hover:-translate-y-1 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)]"
+        <motion.div
+          variants={pageReveal}
+          initial="hidden"
+          animate="show"
         >
-          <Plus className="w-5 h-5" />
-          {t('gallery.post_btn')}
-        </button>
+          <motion.h1
+            variants={itemReveal}
+            className="text-5xl md:text-7xl font-black mb-6 tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-500"
+          >
+            {t('gallery.title')}
+          </motion.h1>
+          <motion.p
+            variants={itemReveal}
+            className="text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed"
+          >
+            {t('gallery.subtitle')}
+          </motion.p>
+          <motion.div variants={itemReveal}>
+            <button 
+              onClick={() => setIsModalOpen(true)}
+              className="mt-10 inline-flex items-center gap-2 px-10 py-4 bg-black text-white rounded-full font-bold hover:bg-gray-800 transition-all duration-300 hover:scale-105 hover:-translate-y-1 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)]"
+            >
+              <Plus className="w-5 h-5" />
+              {t('gallery.post_btn')}
+            </button>
+          </motion.div>
+        </motion.div>
       </div>
 
       {/* Masonry Grid */}
@@ -162,9 +198,18 @@ export default function GalleryPage() {
             <p>还没有人发布灵感，快来抢沙发吧！</p>
           </div>
         ) : (
-          <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-8">
+          <motion.div
+            variants={pageReveal}
+            initial="hidden"
+            animate="show"
+            className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-8"
+          >
             {posts.map((post) => (
-              <div key={post.id} className="break-inside-avoid relative group rounded-[2rem] overflow-hidden bg-white shadow-sm hover:shadow-2xl transition-all duration-700 border border-gray-100 mb-8 flex flex-col">
+              <motion.div
+                key={post.id}
+                variants={itemReveal}
+                className="break-inside-avoid relative group rounded-[2rem] overflow-hidden bg-white shadow-sm hover:shadow-2xl transition-all duration-700 border border-gray-100 mb-8 flex flex-col"
+              >
                 {/* Image Container */}
                 <div className="relative w-full">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -204,9 +249,9 @@ export default function GalleryPage() {
                     </span>
                   </button>
                </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         )}
       </div>
 
