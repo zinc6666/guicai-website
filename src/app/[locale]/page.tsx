@@ -4,6 +4,8 @@ import { ArrowRight, Droplet, Layers, Award, Leaf, Search, Globe, Sparkles } fro
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import TeamCarousel from "@/components/TeamCarousel";
+import MidnightSkyBackground from "@/components/MidnightSkyBackground";
+import HomeHeroClient from "@/components/HomeHeroClient";
 
 export default function Home() {
   const t = useTranslations();
@@ -19,50 +21,10 @@ export default function Home() {
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-transparent to-white"></div>
         
         <div className="w-full px-6 lg:px-12 text-center">
-          {/* GUICAI Logo Recreated with CSS - Responsive & Overlapping */}
-          <div className="flex justify-center items-center mb-12 select-none transform-gpu py-20 w-[80vw] mx-auto">
-            <div className="flex -space-x-[0.10em] text-[33vw] lg:text-[18vw] font-black tracking-tighter leading-none">
-              <span className="text-red-600/90 mix-blend-multiply z-10 drop-shadow-2xl">G</span>
-              <span className="text-yellow-400/90 mix-blend-multiply z-20 drop-shadow-2xl">U</span>
-              <span className="text-lime-500/90 mix-blend-multiply z-30 drop-shadow-2xl">i</span>
-              <span className="text-teal-500/90 mix-blend-multiply z-40 drop-shadow-2xl">C</span>
-              <span className="text-blue-600/90 mix-blend-multiply z-50 drop-shadow-2xl">A</span>
-              <span className="text-purple-600/90 mix-blend-multiply z-60 drop-shadow-2xl">i</span>
-            </div>
-          </div>
-
-          {/* Artistic Diagonal Text Layout */}
-          <div className="relative w-full max-w-5xl mx-auto mb-24 px-4">
-            {/* Top Left Text */}
-            <div className="flex justify-start relative z-10">
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-800 tracking-tight leading-tight drop-shadow-sm text-left">
-                {t('hero.subtitle_1')}
-              </h2>
-            </div>
-            
-
-
-            {/* Decorative Image - Floating Top Right */}
-            <div className="absolute top-0 right-0 md:right-10 w-24 h-24 md:w-40 md:h-40 transform -translate-y-3/3 translate-x-4 md:translate-x-1/2 rotate-6 z-0 hover:rotate-12 transition-transform duration-500">
-              <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white/80 backdrop-blur-sm">
-                <Image 
-                  src="/gui4.jpg" 
-                  alt="Nature & Vitality" 
-                  fill 
-                  className="object-cover"
-                />
-              </div>
-            </div>
-
-
-
-            {/* Bottom Right Text */}
-            <div className="flex justify-end mt-12 md:mt-20 relative z-10">
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 tracking-tight leading-tight drop-shadow-sm text-right">
-                {t('hero.subtitle_2')}
-              </h2>
-            </div>
-          </div>
+          <HomeHeroClient 
+            subtitle1={t('hero.subtitle_1')} 
+            subtitle2={t('hero.subtitle_2')} 
+          />
 
           <div className="mt-8 mb-16 flex justify-center relative z-20">
             <Link 
@@ -97,8 +59,9 @@ export default function Home() {
       </section>
 
       {/* Wide Application Areas - Innovative & High Impact */}
-      <section className="py-24 bg-black text-white overflow-hidden">
-        <div className="w-full px-6 lg:px-12">
+      <section className="py-24 relative overflow-hidden text-white z-0">
+        <MidnightSkyBackground />
+        <div className="w-full px-6 lg:px-12 relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-end mb-20">
             <div>
               <h2 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">

@@ -4,7 +4,9 @@ import Link from "next/link";
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { Menu, X, ChevronRight } from "lucide-react";
+import GuicaiAnimatedLogo from "@/components/GuicaiAnimatedLogo";
 
 export default function Navbar() {
   const t = useTranslations();
@@ -68,12 +70,17 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed w-full bg-gradient-to-r from-red-100/80 via-yellow-100/80 via-green-100/80 via-teal-100/80 via-blue-100/80 to-purple-100/80 backdrop-blur-md z-50 border-b border-gray-100/50" onMouseLeave={() => setHoveredMenu(null)}>
+    <motion.nav 
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+      className="fixed w-full bg-white/70 backdrop-blur-xl z-50 border-b border-gray-200/50" 
+      onMouseLeave={() => setHoveredMenu(null)}
+    >
       <div className="w-full px-6 lg:px-12">
         <div className="flex justify-between items-center h-20"> {/* Increased height slightly for comfort */}
           <Link href="/" className="flex items-center gap-1">
-            {/* Gradient GUICAI Logo for Navigation */}
-            <span className="text-3xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-yellow-500 via-green-500 via-teal-500 via-blue-600 to-purple-600">GUICAI龟彩</span>
+            <GuicaiAnimatedLogo />
           </Link>
           
           <div className="hidden md:flex items-center space-x-10 h-full ml-auto mr-8"> {/* Increased space-x, moved to right with ml-auto */}
@@ -230,6 +237,6 @@ export default function Navbar() {
           </div>
         </div>
       )}
-    </nav>
+    </motion.nav>
   );
 }
