@@ -257,32 +257,6 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex gap-6">
-                <div className="text-center">
-                  <div className="w-28 h-28 bg-white mb-3 p-2 flex items-center justify-center">
-                    {/* Placeholder for QR Code */}
-                    <div className="w-full h-full border-2 border-dashed border-gray-300 flex items-center justify-center text-gray-400 text-xs">
-                      {t('footer.qr_placeholder')}
-                    </div>
-                  </div>
-                  <p className="text-xs text-gray-500 max-w-[120px]">
-                    {t('footer.wechat_mp')}<br/>
-                    {t('footer.get_updates')}
-                  </p>
-                </div>
-                <div className="text-center">
-                  <div className="w-28 h-28 bg-white mb-3 p-2 flex items-center justify-center">
-                    {/* Placeholder for QR Code */}
-                    <div className="w-full h-full border-2 border-dashed border-gray-300 flex items-center justify-center text-gray-400 text-xs">
-                      {t('footer.qr_placeholder')}
-                    </div>
-                  </div>
-                  <p className="text-xs text-gray-500 max-w-[120px]">
-                    {t('footer.app_name')}<br/>
-                    {t('footer.app_desc')}
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
 
