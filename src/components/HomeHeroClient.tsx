@@ -32,7 +32,24 @@ export default function HomeHeroClient({ subtitle1, subtitle2 }: Props) {
       </div>
 
       {/* Artistic Diagonal Text Layout */}
-      <div className="relative w-full max-w-5xl mx-auto mb-24 px-4">
+      <div className="relative w-full max-w-5xl mx-auto mb-24 px-4 mt-32">
+        {/* Decorative Image - Floating Top Right (Moved Above Text) */}
+        <motion.div 
+          initial={{ y: 60, opacity: 0, rotate: 0 }}
+          animate={{ y: 0, opacity: 1, rotate: 6 }}
+          transition={{ duration: 1, delay: 1.2, type: "spring", stiffness: 80, damping: 15 }}
+          className="absolute -top-32 md:-top-40 right-10 md:right-20 w-32 h-32 md:w-48 md:h-48 transform translate-x-4 md:translate-x-1/2 z-0 hover:rotate-12 transition-transform duration-500"
+        >
+          <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white/80 backdrop-blur-sm">
+            <Image 
+              src="/gui4.jpg" 
+              alt="Nature & Vitality" 
+              fill 
+              className="object-cover"
+            />
+          </div>
+        </motion.div>
+
         {/* Top Left Text */}
         <div className="flex justify-start relative z-10">
           <motion.h2 
@@ -59,23 +76,6 @@ export default function HomeHeroClient({ subtitle1, subtitle2 }: Props) {
           </motion.h2>
         </div>
         
-        {/* Decorative Image - Floating Top Right */}
-        <motion.div 
-          initial={{ y: 60, opacity: 0, rotate: 0 }}
-          animate={{ y: 0, opacity: 1, rotate: 6 }}
-          transition={{ duration: 1, delay: 1.2, type: "spring", stiffness: 80, damping: 15 }}
-          className="absolute top-0 right-0 md:right-10 w-24 h-24 md:w-40 md:h-40 transform translate-x-4 md:translate-x-1/2 z-0 hover:rotate-12 transition-transform duration-500"
-        >
-          <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white/80 backdrop-blur-sm">
-            <Image 
-              src="/gui4.jpg" 
-              alt="Nature & Vitality" 
-              fill 
-              className="object-cover"
-            />
-          </div>
-        </motion.div>
-
         {/* Bottom Right Text */}
         <div className="flex justify-end mt-12 md:mt-20 relative z-10">
           <motion.h2 
