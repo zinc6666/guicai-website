@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Target, Eye, Heart, ChevronDown } from "lucide-react";
 import { useState } from 'react';
+import { motion } from "framer-motion";
 
 export default function CulturePage() {
   const t = useTranslations();
@@ -11,6 +12,8 @@ export default function CulturePage() {
   const toggleValue = (key: string) => {
     setExpandedValue(expandedValue === key ? null : key);
   };
+
+  const keywords = ["COLOR", "EMPOWER", "VIVIDITY", "HEALTH", "INSPIRATION", "CREATION"];
 
   const values = [
     {
@@ -43,9 +46,30 @@ export default function CulturePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-sans pt-32 pb-20">
+    <div className="min-h-screen bg-white text-gray-900 font-sans pb-20">
+      
+      {/* Keywords Marquee Section */}
+      <section className="pt-32 pb-10 relative z-10 overflow-hidden border-b border-gray-100 bg-white/50 backdrop-blur-sm">
+        <div className="flex whitespace-nowrap">
+          <motion.div
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ ease: "linear", duration: 30, repeat: Infinity }}
+            className="flex gap-16 items-center px-8"
+          >
+            {[...keywords, ...keywords].map((keyword, idx) => (
+              <div key={idx} className="flex items-center gap-16">
+                <span className="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-400 tracking-widest">
+                  {keyword}
+                </span>
+                <span className="w-4 h-4 rounded-full bg-blue-500/20"></span>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
       {/* Header */}
-      <div className="w-full px-6 lg:px-12 mb-20 text-center">
+      <div className="w-full px-6 lg:px-12 mt-20 mb-20 text-center">
         <h1 className="text-5xl font-extrabold mb-8 tracking-tight">{t('nav.about')}</h1>
         <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed italic">
           "{t('hero.subtitle_1')}

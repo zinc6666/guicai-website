@@ -66,8 +66,8 @@
   "menu": {
     "products": {
       "desktop": {
-        "title": "Smart Desktop Mixer",
-        "desc": "High precision color matching for lab and small scale production"
+        "title": "World's First Desktop Acrylic Mixer",
+        "desc": "Pioneering the industry by condensing industrial-grade color precision onto the desktop"
       },
       "industrial": {
         "title": "Industrial Mixing System",
@@ -94,10 +94,6 @@
       "ceramics": {
         "title": "Art Ceramics",
         "desc": "Precise mixing and coloring of professional glazes"
-      },
-      "handicrafts": {
-        "title": "Handicrafts",
-        "desc": "Cross-boundary color applications for wood, leather, and fabric"
       }
     },
     "about": {
@@ -140,6 +136,37 @@
       "p3": "\"Gui\" (Turtle) symbolizes longevity and resilience. We believe that every mixed color should withstand the test of time and environment, remaining eternal like a thousand-year-old turtle. \"Cai\" (Color) represents infinite colors and creativity. We empower with technology, allowing every drop of liquid to be precisely dispensed, releasing unprecedented artistic and industrial potential. \"Guicai\" sounds like \"Gui Cai\" (Genius), and we pay tribute to those bold and innovative geniuses—artists, designers, engineers—helping them find the source of inspiration in color mixing.",
       "p4": "Our 26 core R&D team members have been deeply cultivating the field of intelligent color mixing for many years, holding multiple independent patents, focusing on the R&D, production, and technical services of desktop color mixers and liquid precision dispensing equipment. From creative experiments in the laboratory to production line optimization in factories; from personalized blending of beauty trends to precise control of textile printing; from the infinite imagination of artistic creation to the durable protection of industrial coatings—our products and services cover the global color mixing and liquid dispensing industry, helping countless geniuses realize their dreams.",
       "p5": "Guicai is not just a company; it is a belief: Art unbounded by color mixing, Guicai empowers new vitality, making every drop of pigment an eternal masterpiece. Join us to create a longevity era of color and release the infinite brilliance of geniuses."
+    }
+  },
+  "about_page": {
+    "hero": {
+      "title": "Shattering Boundaries, Pioneering Desktop Color Mixing",
+      "subtitle": "The creator of the world's first desktop acrylic paint smart color mixer, redefining the rules of color.",
+      "desc": "As an industry disruptor, Guicai Technology has launched the world's first desktop smart color mixing equipment for acrylic paints. Fusing industrial-grade precision manufacturing with cutting-edge color algorithms, we break traditional barriers to provide creators and studios worldwide with a unique milli-liter (mL) high-precision color control engine."
+    },
+    "stats": {
+      "stat1": { "value": "1st", "label": "Global First Desktop Mixer" },
+      "stat2": { "value": "26", "label": "Core R&D Experts" },
+      "stat3": { "value": "1mL", "label": "High-Precision Dispensing" },
+      "stat4": { "value": "∞", "label": "Infinite Color Possibilities" }
+    },
+    "cards": {
+      "intro": {
+        "title": "World's First Desktop Engine",
+        "desc": "Breaking away from the bulk and complexity of traditional industrial equipment. As the first pioneer globally to condense acrylic paint color mixing technology to a desktop scale, our high-precision liquid dispensing matrix achieves full-scenario coverage from avant-garde labs to personal studios. Milli-liter (mL) level precision ensures every drop of pigment is rigorous and reliable."
+      },
+      "team": {
+        "title": "Geek R&D Matrix",
+        "desc": "Gathering 26 R&D experts deeply engaged in fluid mechanics, AI color algorithms, and precision manufacturing. We reject mediocrity and inject endless technological power into the global color industry with a fearless spirit of exploration."
+      },
+      "patents": {
+        "title": "Core Technical Assets",
+        "desc": "Mastering key intellectual property in the smart color mixing field. From anti-precipitation circulation systems to AI color prediction models, we have defined high industry standards through multiple core technology barriers, making Guicai synonymous with precision color."
+      }
+    },
+    "cta": {
+      "title": "Disrupt the Color World with Guicai",
+      "btn": "Start the Color Revolution"
     }
   },
   "hero": {
@@ -256,12 +283,15 @@
     "min_volume": "Min Volume",
     "precision": "Precision",
     "capacity": "Capacity",
+    "capacity_value": "Infinite Cloud Storage",
     "scenarios": "Scenarios",
+    "scenarios_value": "Labs, Salons, Design Studios",
+    "core_advantages_desc": "Designed for environments with limited space but extremely high color requirements. Using exclusive micro-pump technology, even highly complex color formulas can be perfectly replicated in minutes.",
     "fast_response": "#FastResponse",
     "zero_waste": "#ZeroWaste",
     "silent_run": "#SilentRun",
-    "redefine_workflow": "Redefine Desktop Workflow",
-    "redefine_desc": "From inspiration to reality in one click. Free designers and colorists from tedious manual mixing to focus on color creation itself.",
+    "redefine_workflow": "World's First, Redefining Desktop Color Standards",
+    "redefine_desc": "As the market's first and only true desktop-level acrylic paint color mixing device, Guicai turns complex industrial color mixing into a one-click process. We completely free creators' hands, allowing all your energy to return to artistic creation itself.",
     "production_boost": "Production Boost",
     "pass_rate": "Pass Rate",
     "maintenance_cost": "Maintenance Cost",
@@ -270,16 +300,16 @@
     "consumables": "Original Consumables",
     "pigments": "Nano Eco-Pigments",
     "cleaner": "Special Cleaner",
-    "service_pack": "Worry-free Service",
-    "quarterly_check": "Quarterly On-site Calibration",
-    "parts_replacement": "Free Parts Replacement",
-    "support_24h": "24h Expert Support",
-    "emergency_response": "4h Emergency Response",
+    "service_pack": "Premium After-Sales Support",
+    "quarterly_check": "Professional Troubleshooting",
+    "parts_replacement": "Original Spare Parts Supply",
+    "support_24h": "Online Expert Guidance",
+    "emergency_response": "Fast Response Mechanism",
     "desktop_details": [
-      "High Precision Algorithm",
-      "Lab-grade Micro Mixing",
-      "Smart Cloud Formula Mgmt",
-      "Compact Desktop Design"
+      "World's First Micro-Pump Tech",
+      "Milli-liter (mL) Extreme Precision",
+      "Deeply Customized for Acrylics",
+      "Massive Smart Cloud Formula DB"
     ],
     "industrial_details": [
       "Mass Automated Production",
@@ -290,8 +320,8 @@
     "accessories_details": [
       "High Purity Colorants",
       "Precision Pump & Tubing",
-      "Regular Maintenance Kit",
-      "Calibration Tools"
+      "Modular Quick-Release",
+      "Smart Sensor Chips"
     ]
   },
   "solutions_page": {
@@ -331,14 +361,6 @@
       "highlight2": "Data-driven Formulas",
       "highlight3": "High-temp Stable Color",
       "interactive_text": "Mix → Glaze → Fire"
-    },
-    "handicrafts": {
-      "desc": "Cross-boundary color applications for wood, leather, fabric, etc.",
-      "detail": "Infinitely expand the color boundaries of handmade art. Whether it's rustic wood carving, retro leather goods, or soft fabric art, Guicai Color Mixer provides the most suitable pigment formulas. Inspire your infinite creativity and breathe new life into handicrafts.",
-      "highlight1": "Infinite Creativity",
-      "highlight2": "Multi-material Adaptation",
-      "highlight3": "Exclusive Color Archive",
-      "interactive_text": "Explore More Creative Ideas"
     }
   }
 }

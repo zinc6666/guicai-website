@@ -42,7 +42,6 @@ export default function Navbar() {
         { key: 'shoes', title: t('menu.solutions.shoes.title'), desc: t('menu.solutions.shoes.desc') },
         { key: 'accessories', title: t('menu.solutions.accessories.title'), desc: t('menu.solutions.accessories.desc') },
         { key: 'ceramics', title: t('menu.solutions.ceramics.title'), desc: t('menu.solutions.ceramics.desc') },
-        { key: 'handicrafts', title: t('menu.solutions.handicrafts.title'), desc: t('menu.solutions.handicrafts.desc') },
       ]
     },
     {

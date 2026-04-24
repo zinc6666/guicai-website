@@ -194,12 +194,11 @@ export default function Home() {
               {/* Solutions (Mapped to "Innovative Products") */}
               <div>
                 <h4 className="font-bold mb-6 text-white text-lg">{t('nav.solutions')}</h4>
-                <ul className="space-y-3 text-gray-400">
-                  <li><Link href="/solutions" className="hover:text-white transition-colors">{t('menu.solutions.clothes.title')}</Link></li>
-                  <li><Link href="/solutions" className="hover:text-white transition-colors">{t('menu.solutions.shoes.title')}</Link></li>
-                  <li><Link href="/solutions" className="hover:text-white transition-colors">{t('menu.solutions.accessories.title')}</Link></li>
-                  <li><Link href="/solutions" className="hover:text-white transition-colors">{t('menu.solutions.ceramics.title')}</Link></li>
-                  <li><Link href="/solutions" className="hover:text-white transition-colors">{t('menu.solutions.handicrafts.title')}</Link></li>
+                <ul className="space-y-4">
+                  <li><Link href="/solutions#clothes" className="text-gray-400 hover:text-white transition-colors">{t('menu.solutions.clothes.title')}</Link></li>
+                  <li><Link href="/solutions#shoes" className="text-gray-400 hover:text-white transition-colors">{t('menu.solutions.shoes.title')}</Link></li>
+                  <li><Link href="/solutions#accessories" className="text-gray-400 hover:text-white transition-colors">{t('menu.solutions.accessories.title')}</Link></li>
+                  <li><Link href="/solutions#ceramics" className="text-gray-400 hover:text-white transition-colors">{t('menu.solutions.ceramics.title')}</Link></li>
                 </ul>
               </div>
 

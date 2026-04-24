@@ -55,16 +55,6 @@ export default function SolutionsPage() {
       height: 'h-[400px]',
       mixerRole: '模拟高温烧制后的釉料色彩变化，实现所见即所得的专业陶瓷配色。',
       mixerFeatures: ['釉料模拟', '窑变预判', '专业色卡']
-    },
-    {
-      key: 'handicrafts',
-      icon: <Hammer className="w-6 h-6" />,
-      image: 'https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=800&q=80',
-      tag: 'CRAFTS',
-      colSpan: 'col-span-1 md:col-span-3 lg:col-span-1',
-      height: 'h-[400px]',
-      mixerRole: '跨材质色彩融合技术，完美适应木雕、皮具、布艺等多种手工媒介。',
-      mixerFeatures: ['跨材质融合', '纹理保留', '无限创意']
     }
   ];
 
